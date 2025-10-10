@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentEncoding = defaultEncoding
   let targetEncoding = Number(btf.saveToLocal.get(targetEncodingCookie)) || defaultEncoding
   const translateButtonObject = document.getElementById('translateLink')
-  const isSnackbar = snackbarData !== undefined
+  const isSnackbar = false // 关闭繁简转换的提示弹窗
 
   const setLang = () => {
     document.documentElement.lang = targetEncoding === 1 ? 'zh-TW' : 'zh-CN'
@@ -53,12 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
       currentEncoding = 1
       targetEncoding = 2
       translateButtonObject.textContent = msgToTraditionalChinese
-      isSnackbar && btf.snackbarShow(snackbarData.cht_to_chs)
+      // 已关闭提示弹窗
     } else if (targetEncoding === 2) {
       currentEncoding = 2
       targetEncoding = 1
       translateButtonObject.textContent = msgToSimplifiedChinese
-      isSnackbar && btf.snackbarShow(snackbarData.chs_to_cht)
+      // 已关闭提示弹窗
     }
     btf.saveToLocal.set(targetEncodingCookie, targetEncoding, 2)
     setLang()

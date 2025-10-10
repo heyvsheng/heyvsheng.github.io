@@ -33,3 +33,456 @@
 [data-theme="dark"] #page-header::before {
     background: transparent !important;
 }
+
+/* 一级菜单居中 */
+#nav .menus_items {
+    position: absolute !important;
+    width: fit-content !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
+
+/* 子菜单横向展示 */
+#nav .menus_items .menus_item:hover .menus_item_child {
+    display: flex !important;
+}
+
+/* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 ，取决于实际的菜单*/
+.menus_items .menus_item:nth-child(5) .menus_item_child {
+    left: -38px;
+}
+
+/* 日间模式不生效 */
+[data-theme="light"] #site-name,
+[data-theme="light"] #site-title,
+[data-theme="light"] #site-subtitle,
+[data-theme="light"] #post-info {
+    animation: none;
+}
+
+/* 夜间模式生效 */
+[data-theme="dark"] #site-name,
+[data-theme="dark"] #site-title {
+    animation: light_15px 10s linear infinite;
+}
+
+[data-theme="dark"] #site-subtitle {
+    animation: light_10px 10s linear infinite;
+}
+
+[data-theme="dark"] #post-info {
+    animation: light_5px 10s linear infinite;
+}
+
+/* 关键帧描述 */
+/*黑夜霓虹灯*/
+@keyframes light_15px {
+    0% {
+        text-shadow: #5636ed 0 0 15px;
+    }
+
+    12.5% {
+        text-shadow: #11ee5e 0 0 15px;
+    }
+
+    25% {
+        text-shadow: #f14747 0 0 15px;
+    }
+
+    37.5% {
+        text-shadow: #f1a247 0 0 15px;
+    }
+
+    50% {
+        text-shadow: #f1ee47 0 0 15px;
+    }
+
+    50% {
+        text-shadow: #b347f1 0 0 15px;
+    }
+
+    62.5% {
+        text-shadow: #002afa 0 0 15px;
+    }
+
+    75% {
+        text-shadow: #ed709b 0 0 15px;
+    }
+
+    87.5% {
+        text-shadow: #39c5bb 0 0 15px;
+    }
+
+    100% {
+        text-shadow: #5636ed 0 0 15px;
+    }
+}
+
+@keyframes light_10px {
+    0% {
+        text-shadow: #5636ed 0 0 10px;
+    }
+
+    12.5% {
+        text-shadow: #11ee5e 0 0 10px;
+    }
+
+    25% {
+        text-shadow: #f14747 0 0 10px;
+    }
+
+    37.5% {
+        text-shadow: #f1a247 0 0 10px;
+    }
+
+    50% {
+        text-shadow: #f1ee47 0 0 10px;
+    }
+
+    50% {
+        text-shadow: #b347f1 0 0 10px;
+    }
+
+    62.5% {
+        text-shadow: #002afa 0 0 10px;
+    }
+
+    75% {
+        text-shadow: #ed709b 0 0 10px;
+    }
+
+    87.5% {
+        text-shadow: #39c5bb 0 0 10px;
+    }
+
+    100% {
+        text-shadow: #5636ed 0 0 10px;
+    }
+}
+
+@keyframes light_5px {
+    0% {
+        text-shadow: #5636ed 0 0 5px;
+    }
+
+    12.5% {
+        text-shadow: #11ee5e 0 0 5px;
+    }
+
+    25% {
+        text-shadow: #f14747 0 0 5px;
+    }
+
+    37.5% {
+        text-shadow: #f1a247 0 0 15px;
+    }
+
+    50% {
+        text-shadow: #f1ee47 0 0 5px;
+    }
+
+    50% {
+        text-shadow: #b347f1 0 0 5px;
+    }
+
+    62.5% {
+        text-shadow: #002afa 0 0 5px;
+    }
+
+    75% {
+        text-shadow: #ed709b 0 0 5px;
+    }
+
+    87.5% {
+        text-shadow: #39c5bb 0 0 5px;
+    }
+
+    100% {
+        text-shadow: #5636ed 0 0 5px;
+    }
+}
+
+/*个人卡片渐变*/
+/* 侧边栏个人信息卡片动态渐变色 */
+#aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #b78cff,
+            #caa1ff,
+            #e9a8ff,
+            #f6c5ff,
+            #d3c2ff);
+    box-shadow: 0 6px 20px rgba(164, 69, 255, 0.22), 0 0 14px rgba(236, 72, 153, 0.18);
+    position: relative;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite !important;
+}
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* 黑夜模式适配 */
+[data-theme="dark"] #aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #5a36c9,
+            #7a49e3,
+            #9b5de5,
+            #b36af0);
+    box-shadow: 0 6px 22px rgba(155, 93, 229, 0.25), 0 0 14px rgba(236, 72, 153, 0.2);
+}
+
+/*
+ * 主题：星空（偏夜空紫，带一点蓝的清冷霓虹）
+ * 使用方式：在 <body> 上添加类名 theme-starry
+ * 作用范围：仅覆盖侧边栏个人信息卡片的背景与投影
+ */
+body.theme-starry #aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #1b1236,
+            #3a1f6e,
+            #5624b8,
+            #6d28d9,
+            #2b6cb0);
+    box-shadow: 0 8px 26px rgba(109, 40, 217, 0.28), 0 0 18px rgba(59, 130, 246, 0.22);
+}
+
+/* 暗色模式下的星空主题卡片样式（与上面同风格、亮度稍降） */
+[data-theme="dark"] body.theme-starry #aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #100a22,
+            #2a1754,
+            #4c1d95,
+            #6d28d9);
+    box-shadow: 0 10px 30px rgba(109, 40, 217, 0.35), 0 0 20px rgba(59, 130, 246, 0.25);
+}
+
+/*
+ * 主题：伟大（高对比、仪式感，紫金微辉）
+ * 使用方式：在 <body> 上添加类名 theme-epic
+ */
+body.theme-epic #aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #2a0e61,
+            #6a1b9a,
+            #8b5cf6,
+            #c084fc);
+    box-shadow: 0 10px 28px rgba(139, 92, 246, 0.26), 0 0 18px rgba(234, 179, 8, 0.18);
+    border: 1px solid rgba(234, 179, 8, 0.25);
+}
+
+/* 暗色模式下的“伟大”主题卡片样式 */
+[data-theme="dark"] body.theme-epic #aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #1d0a46,
+            #4c1480,
+            #7c3aed,
+            #a78bfa);
+    box-shadow: 0 12px 32px rgba(124, 58, 237, 0.3), 0 0 22px rgba(234, 179, 8, 0.22);
+}
+
+/*
+ * 主题：紫色（都市轻霓虹，通用耐看）
+ * 使用方式：在 <body> 上添加类名 theme-purple
+ */
+body.theme-purple #aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #ad8bff,
+            #c3a7ff,
+            #e2b6ff,
+            #f1d0ff);
+    box-shadow: 0 8px 24px rgba(164, 69, 255, 0.22), 0 0 16px rgba(236, 72, 153, 0.18);
+}
+
+/* 暗色模式下的“紫色”主题卡片样式 */
+[data-theme="dark"] body.theme-purple #aside-content>.card-widget.card-info {
+    background: linear-gradient(135deg,
+            #4f2bb5,
+            #6a3ee0,
+            #8b5cf6,
+            #a78bfa);
+    box-shadow: 0 10px 26px rgba(139, 92, 246, 0.26), 0 0 18px rgba(236, 72, 153, 0.2);
+}
+
+/*
+ * 右下角设置与返回顶部图标：星空蓝悬停效果
+ * 目标元素：#rightside 区域内的“设置按钮”和“返回顶部”
+ * 效果：图标变为星空蓝并带霓虹辉光，背景/边框轻微高亮
+ */
+#rightside #rightside-config:hover i,
+#rightside #go-up:hover i {
+    color: #60a5fa;
+    /* 星光蓝 */
+    text-shadow: 0 0 8px rgba(96, 165, 250, 0.9), 0 0 16px rgba(59, 130, 246, 0.6);
+}
+
+#rightside #rightside-config:hover,
+#rightside #go-up:hover {
+    background: rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.35);
+}
+
+[data-theme="dark"] #rightside #rightside-config:hover i,
+[data-theme="dark"] #rightside #go-up:hover i {
+    color: #93c5fd;
+    /* 暗色模式稍亮的星空蓝 */
+    text-shadow: 0 0 10px rgba(147, 197, 253, 0.95), 0 0 18px rgba(59, 130, 246, 0.7);
+}
+
+[data-theme="dark"] #rightside #rightside-config:hover,
+[data-theme="dark"] #rightside #go-up:hover {
+    background: rgba(37, 99, 235, 0.16);
+    border-color: rgba(59, 130, 246, 0.45);
+}
+
+/*
+ * 右下角设置面板：夜间模式、繁简转换、单/双栏切换 悬停为荧光绿
+ * 目标元素：#darkmode、#translateLink、#hide-aside-btn
+ * 效果：图标/文字荧光绿色，伴随霓虹辉光；按钮背景/边框轻微高亮
+ */
+#rightside #rightside-config-hide #darkmode:hover i,
+#rightside #rightside-config-hide #hide-aside-btn:hover i {
+    color: #39ff14;
+    /* 荧光绿 */
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.95), 0 0 18px rgba(57, 255, 20, 0.6);
+}
+
+#rightside #rightside-config-hide #translateLink:hover {
+    color: #39ff14;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.95), 0 0 18px rgba(57, 255, 20, 0.6);
+}
+
+#rightside #rightside-config-hide #darkmode:hover,
+#rightside #rightside-config-hide #translateLink:hover,
+#rightside #rightside-config-hide #hide-aside-btn:hover {
+    background: rgba(57, 255, 20, 0.12);
+    border-color: rgba(57, 255, 20, 0.35);
+}
+
+[data-theme="dark"] #rightside #rightside-config-hide #darkmode:hover i,
+[data-theme="dark"] #rightside #rightside-config-hide #hide-aside-btn:hover i {
+    color: #72ff4d;
+    /* 暗色模式稍亮 */
+    text-shadow: 0 0 12px rgba(114, 255, 77, 0.95), 0 0 20px rgba(57, 255, 20, 0.7);
+}
+
+[data-theme="dark"] #rightside #rightside-config-hide #translateLink:hover {
+    color: #72ff4d;
+    text-shadow: 0 0 12px rgba(114, 255, 77, 0.95), 0 0 20px rgba(57, 255, 20, 0.7);
+}
+
+[data-theme="dark"] #rightside #rightside-config-hide #darkmode:hover,
+[data-theme="dark"] #rightside #rightside-config-hide #translateLink:hover,
+[data-theme="dark"] #rightside #rightside-config-hide #hide-aside-btn:hover {
+    background: rgba(22, 163, 74, 0.18);
+    border-color: rgba(57, 255, 20, 0.45);
+}
+
+/*
+ * 顶部提示条（Snackbar）：固定顶部居中显示，并按明暗模式切换配色
+ * 明亮模式：炫酷紫色渐变 + 柔和辉光
+ * 暗黑模式：星空蓝渐变 + 荧光辉光
+ */
+.snackbar-container.snackbar-css {
+    top: 10px !important;
+    bottom: auto !important;
+}
+
+/* 白天（light）：炫酷紫色并带辉光 */
+html[data-theme="light"] .snackbar-container.snackbar-css {
+    background: linear-gradient(135deg, #ad8bff, #caa1ff) !important;
+    box-shadow: 0 8px 24px rgba(164, 69, 255, 0.28), 0 0 16px rgba(236, 72, 153, 0.22) !important;
+}
+
+/* 夜间（dark）：星空蓝并带荧光辉光 */
+html[data-theme="dark"] .snackbar-container.snackbar-css {
+    background: linear-gradient(135deg, #0b1533, #1b2a4a, #2a4b8d) !important;
+    box-shadow: 0 10px 28px rgba(59, 130, 246, 0.28), 0 0 18px rgba(147, 197, 253, 0.22) !important;
+}
+
+.snackbar-container.snackbar-css .action,
+.snackbar-container.snackbar-css .snackbar-content {
+    color: #ffffff !important;
+}
+
+/* 滚动条紫色主题 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(173, 139, 255, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #ad8bff, #caa1ff);
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(164, 69, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #9b5de5, #b36af0);
+    box-shadow: 0 0 8px rgba(164, 69, 255, 0.5);
+}
+
+/* 暗色模式滚动条 */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #6a3ee0, #8b5cf6);
+    box-shadow: 0 0 6px rgba(109, 40, 217, 0.4);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+    box-shadow: 0 0 8px rgba(109, 40, 217, 0.6);
+}
+
+/* 个人信息Follow me按钮 */
+#aside-content>.card-widget.card-info>#card-info-btn {
+
+    border-radius: 8px;
+}
