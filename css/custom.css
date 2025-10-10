@@ -1,95 +1,35 @@
-/* 页面整体背景 */
-body {
-    background: linear-gradient(135deg, #B041FF 0%, #6E25D1 50%, #3A1078 100%);
-    background-attachment: fixed;
-    background-size: cover;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+/* 页脚与头图透明 */
+#footer {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    /* Safari 支持 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* 细微边框增强效果 */
 }
 
-/* 页面内容容器，增加一些阴影和圆角，提升视觉效果 */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+#page-header {
+    background: rgba(255, 255, 255, 0.08) !important;
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* 标题样式 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #fff;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+/* 夜间模式调整 */
+[data-theme="dark"] #footer {
+    background: rgba(0, 0, 0, 0.25) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* 链接样式 */
-a {
-    color: #B041FF;
-    text-decoration: none;
-    transition: color 0.3s ease;
+[data-theme="dark"] #page-header {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-a:hover {
-    color: #FF9EF3;
-}
-
-/* 文章卡片样式 */
-.post-card {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.post-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(176, 65, 255, 0.5);
-}
-
-/* 页脚样式 */
-.footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-}
-
-/* 导航栏样式 */
-.nav {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav li {
-    margin: 0 15px;
-}
-
-.nav a {
-    color: #fff;
-    font-weight: bold;
-}
-
-.nav a:hover {
-    color: #B041FF;
+/* 遮罩透明 */
+#footer::before,
+#page-header::before,
+[data-theme="dark"] #footer::before,
+[data-theme="dark"] #page-header::before {
+    background: transparent !important;
 }

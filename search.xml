@@ -21,10 +21,10 @@
     
     <entry>
       <title></title>
-      <link href="/manifest.json"/>
-      <url>/manifest.json</url>
+      <link href="/css/custom.css"/>
+      <url>/css/custom.css</url>
       
-        <content type="html"><![CDATA[{"name":"heyvsheng","short_name":"heyvsheng","theme_color":"#B041FF","background_color":"#B041FF","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
+        <content type="html"><![CDATA[/* 页脚与头图透明 */#footer {    background: rgba(255, 255, 255, 0.1) !important;    backdrop-filter: blur(10px) saturate(150%);    -webkit-backdrop-filter: blur(10px) saturate(150%);    /* Safari 支持 */    border: 1px solid rgba(255, 255, 255, 0.1);    /* 细微边框增强效果 */}#page-header {    background: rgba(255, 255, 255, 0.08) !important;    backdrop-filter: blur(15px) saturate(180%);    -webkit-backdrop-filter: blur(15px) saturate(180%);    border-bottom: 1px solid rgba(255, 255, 255, 0.1);}/* 夜间模式调整 */[data-theme="dark"] #footer {    background: rgba(0, 0, 0, 0.25) !important;    border: 1px solid rgba(255, 255, 255, 0.05);}[data-theme="dark"] #page-header {    background: rgba(0, 0, 0, 0.2) !important;    border-bottom: 1px solid rgba(255, 255, 255, 0.05);}/* 遮罩透明 */#footer::before,#page-header::before,[data-theme="dark"] #footer::before,[data-theme="dark"] #page-header::before {    background: transparent !important;}]]></content>
       
     </entry>
     
@@ -32,10 +32,10 @@
     
     <entry>
       <title></title>
-      <link href="/css/custom.css"/>
-      <url>/css/custom.css</url>
+      <link href="/manifest.json"/>
+      <url>/manifest.json</url>
       
-        <content type="html"><![CDATA[/* 页面整体背景 */body {    background: linear-gradient(135deg, #B041FF 0%, #6E25D1 50%, #3A1078 100%);    background-attachment: fixed;    background-size: cover;    color: #fff;    font-family: 'Arial', sans-serif;    margin: 0;    padding: 0;    overflow-x: hidden;}/* 页面内容容器，增加一些阴影和圆角，提升视觉效果 */.container {    max-width: 1200px;    margin: 0 auto;    padding: 20px;    background-color: rgba(255, 255, 255, 0.1);    border-radius: 10px;    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);}/* 标题样式 */h1,h2,h3,h4,h5,h6 {    color: #fff;    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);}/* 链接样式 */a {    color: #B041FF;    text-decoration: none;    transition: color 0.3s ease;}a:hover {    color: #FF9EF3;}/* 文章卡片样式 */.post-card {    background-color: rgba(255, 255, 255, 0.05);    border-radius: 8px;    padding: 20px;    margin-bottom: 20px;    transition: transform 0.3s ease, box-shadow 0.3s ease;}.post-card:hover {    transform: translateY(-5px);    box-shadow: 0 0 20px rgba(176, 65, 255, 0.5);}/* 页脚样式 */.footer {    text-align: center;    padding: 20px;    margin-top: 50px;    background-color: rgba(0, 0, 0, 0.2);    border-radius: 10px;}/* 导航栏样式 */.nav {    background-color: rgba(0, 0, 0, 0.3);    padding: 15px;    border-radius: 10px;    margin-bottom: 30px;}.nav ul {    list-style: none;    padding: 0;    margin: 0;    display: flex;    justify-content: center;}.nav li {    margin: 0 15px;}.nav a {    color: #fff;    font-weight: bold;}.nav a:hover {    color: #B041FF;}]]></content>
+        <content type="html"><![CDATA[{"name":"heyvsheng","short_name":"heyvsheng","theme_color":"#B041FF","background_color":"#B041FF","display":"standalone","scope":"/","start_url":"/","icons":[{"src":"/img/siteicon/16.png","sizes":"16x16","type":"image/png"},{"src":"/img/siteicon/32.png","sizes":"32x32","type":"image/png"},{"src":"/img/siteicon/48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/64.png","sizes":"64x64","type":"image/png"},{"src":"/img/siteicon/128.png","sizes":"128x128","type":"image/png"},{"src":"/img/siteicon/144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/512.png","sizes":"512x512","type":"image/png"}],"splash_pages":null}]]></content>
       
     </entry>
     
