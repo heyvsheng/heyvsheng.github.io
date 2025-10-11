@@ -481,3 +481,30 @@ html[data-theme="dark"] .snackbar-container.snackbar-css {
 
     border-radius: 8px;
 }
+
+/* 网站背景设置 - 根据主题切换不同的背景图片 */
+
+/* 夜间模式背景设置为ku.jpg */
+html[data-theme="dark"] {
+    background-image: url('/img/ku.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-color: transparent !important;
+}
+
+/* 白天模式背景设置为beautiful.jpg */
+html[data-theme="light"] {
+    background-image: url('/img/beautiful.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-color: transparent !important;
+}
+
+/* 增强优先级，确保背景图始终显示 */
+body {
+    background: transparent !important;
+}
