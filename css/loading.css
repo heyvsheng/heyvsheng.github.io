@@ -1,0 +1,43 @@
+/* 自定义加载页面样式 */
+#loading-box {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 25%, rgba(168, 168, 255, 0.8) 50%, rgba(139, 92, 246, 0.8) 75%, rgba(109, 40, 217, 0.8) 100%);
+}
+
+#loading-box .image-loader .avatar {
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 40px rgba(109, 40, 217, 0.3), 0 0 20px rgba(59, 130, 246, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+#loading-box .image-loader .overlay {
+    background: rgba(59, 130, 246, 0.1);
+    filter: blur(12px);
+}
+
+#loading-box .image-loader .loading-text {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 自定义脉冲动画 */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 8px 40px rgba(109, 40, 217, 0.3), 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 12px 50px rgba(109, 40, 217, 0.4), 0 0 30px rgba(59, 130, 246, 0.4);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 8px 40px rgba(109, 40, 217, 0.3), 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+}

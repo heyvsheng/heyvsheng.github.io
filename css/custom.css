@@ -1,6 +1,9 @@
 /* 引入个人信息卡片样式 */
 @import url('info-card.css');
 
+/* 引入加载页面样式 */
+@import url('loading.css');
+
 /* 页脚与头图透明 */
 #footer {
     background: rgba(255, 255, 255, 0.1) !important;
