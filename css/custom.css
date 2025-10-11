@@ -1,3 +1,6 @@
+/* 引入个人信息卡片样式 */
+@import url('info-card.css');
+
 /* 页脚与头图透明 */
 #footer {
     background: rgba(255, 255, 255, 0.1) !important;
@@ -205,18 +208,10 @@
 /*个人卡片渐变*/
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content>.card-widget.card-info {
-    background: linear-gradient(135deg,
-            #b78cff,
-            #caa1ff,
-            #e9a8ff,
-            #f6c5ff,
-            #d3c2ff);
+    background: url('/img/avabg/bg1.jpg') center/cover no-repeat;
     box-shadow: 0 6px 20px rgba(164, 69, 255, 0.22), 0 0 14px rgba(236, 72, 153, 0.18);
     position: relative;
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 10s ease infinite;
-    -moz-animation: Gradient 10s ease infinite;
-    animation: Gradient 10s ease infinite !important;
+    overflow: hidden;
 }
 
 @-webkit-keyframes Gradient {
@@ -263,12 +258,9 @@
 
 /* 黑夜模式适配 */
 [data-theme="dark"] #aside-content>.card-widget.card-info {
-    background: linear-gradient(135deg,
-            #5a36c9,
-            #7a49e3,
-            #9b5de5,
-            #b36af0);
+    background: url('/img/avabg/bg3.jpg') center/cover no-repeat;
     box-shadow: 0 6px 22px rgba(155, 93, 229, 0.25), 0 0 14px rgba(236, 72, 153, 0.2);
+    filter: brightness(0.8) contrast(1.1);
 }
 
 /*
