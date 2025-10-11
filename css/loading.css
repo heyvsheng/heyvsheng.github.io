@@ -1,7 +1,12 @@
 /* 自定义加载页面样式 */
-#loading-box {
+/* 确保在加载过程中也应用自定义鼠标样式 */
+body.loading {
+    cursor: url('/img/mouse/cursor.cur'), auto !important;
+}
 
+#loading-box {
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 25%, rgba(168, 168, 255, 0.8) 50%, rgba(139, 92, 246, 0.8) 75%, rgba(109, 40, 217, 0.8) 100%);
+    cursor: url('/img/mouse/cursor.cur'), auto !important;
 }
 
 #loading-box .image-loader .avatar {
