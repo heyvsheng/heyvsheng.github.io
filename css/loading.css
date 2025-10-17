@@ -5,11 +5,23 @@ body.loading {
 }
 
 #loading-box {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 25%, rgba(168, 168, 255, 0.8) 50%, rgba(139, 92, 246, 0.8) 75%, rgba(109, 40, 217, 0.8) 100%);
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    /* 保持在最上层加载遮罩 */
+    background: url('/img/beautiful.jpg') center/cover no-repeat;
     cursor: url('/img/mouse/cursor.cur'), auto !important;
 }
 
+/* 夜间模式背景覆盖（优先） */
+body[data-theme="dark"] #loading-box {
+    background: url('/img/ku.jpg') center/cover no-repeat;
+}
+
 #loading-box .image-loader .avatar {
+    position: relative;
+    z-index: 2;
+    /* 确保头像在overlay之上 */
     width: 180px;
     height: 180px;
     background-size: cover;
@@ -19,8 +31,13 @@ body.loading {
 }
 
 #loading-box .image-loader .overlay {
-    background: rgba(59, 130, 246, 0.1);
-    filter: blur(12px);
+    position: absolute;
+    inset: -30px;
+    background: rgba(0, 0, 0, 0.15);
+    /* 更低不透明度，避免完全遮挡背景 */
+    filter: blur(8px);
+    mix-blend-mode: overlay;
+    z-index: 1;
 }
 
 #loading-box .image-loader .loading-text {

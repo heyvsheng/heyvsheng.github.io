@@ -1,2 +1,133 @@
-function dark() { window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame; var n, e, i, h, t = .05, s = document.getElementById("universe"), o = !0, a = "180,184,240", r = "226,225,142", d = "226,225,224", c = []; function f() { n = window.innerWidth, e = window.innerHeight, i = .216 * n, s.setAttribute("width", n), s.setAttribute("height", e) } function u() { h.clearRect(0, 0, n, e); for (var t = c.length, i = 0; i < t; i++) { var s = c[i]; s.move(), s.fadeIn(), s.fadeOut(), s.draw() } } function y() { this.reset = function () { this.giant = m(3), this.comet = !this.giant && !o && m(10), this.x = l(0, n - 10), this.y = l(0, e), this.r = l(1.1, 2.6), this.dx = l(t, 6 * t) + (this.comet + 1 - 1) * t * l(50, 120) + 2 * t, this.dy = -l(t, 6 * t) - (this.comet + 1 - 1) * t * l(50, 120), this.fadingOut = null, this.fadingIn = !0, this.opacity = 0, this.opacityTresh = l(.2, 1 - .4 * (this.comet + 1 - 1)), this.do = l(5e-4, .002) + .001 * (this.comet + 1 - 1) }, this.fadeIn = function () { this.fadingIn && (this.fadingIn = !(this.opacity > this.opacityTresh), this.opacity += this.do) }, this.fadeOut = function () { this.fadingOut && (this.fadingOut = !(this.opacity < 0), this.opacity -= this.do / 2, (this.x > n || this.y < 0) && (this.fadingOut = !1, this.reset())) }, this.draw = function () { if (h.beginPath(), this.giant) h.fillStyle = "rgba(" + a + "," + this.opacity + ")", h.arc(this.x, this.y, 2, 0, 2 * Math.PI, !1); else if (this.comet) { h.fillStyle = "rgba(" + d + "," + this.opacity + ")", h.arc(this.x, this.y, 1.5, 0, 2 * Math.PI, !1); for (var t = 0; t < 30; t++)h.fillStyle = "rgba(" + d + "," + (this.opacity - this.opacity / 20 * t) + ")", h.rect(this.x - this.dx / 4 * t, this.y - this.dy / 4 * t - 2, 2, 2), h.fill() } else h.fillStyle = "rgba(" + r + "," + this.opacity + ")", h.rect(this.x, this.y, this.r, this.r); h.closePath(), h.fill() }, this.move = function () { this.x += this.dx, this.y += this.dy, !1 === this.fadingOut && this.reset(), (this.x > n - n / 4 || this.y < 0) && (this.fadingOut = !0) }, setTimeout(function () { o = !1 }, 50) } function m(t) { return Math.floor(1e3 * Math.random()) + 1 < 10 * t } function l(t, i) { return Math.random() * (i - t) + t } f(), window.addEventListener("resize", f, !1), function () { h = s.getContext("2d"); for (var t = 0; t < i; t++)c[t] = new y, c[t].reset(); u() }(), function t() { document.getElementsByTagName('html')[0].getAttribute('data-theme') == 'dark' && u(), window.requestAnimationFrame(t) }() };
-dark()
+// 宇宙星空背景效果
+class Universe {
+  constructor() {
+    this.canvas = null;
+    this.ctx = null;
+    this.stars = [];
+    this.count = 200;
+    this.width = 0;
+    this.height = 0;
+  }
+
+  init() {
+    // 创建canvas元素
+    const existingCanvas = document.getElementById('universe');
+    if (existingCanvas) {
+      document.body.removeChild(existingCanvas);
+    }
+    
+    this.canvas = document.createElement('canvas');
+    this.canvas.id = 'universe';
+    document.body.appendChild(this.canvas);
+    this.ctx = this.canvas.getContext('2d');
+    
+    // 设置canvas尺寸
+    this.resize();
+    window.addEventListener('resize', () => this.resize());
+    
+    // 创建星星
+    this.createStars();
+    
+    // 动画循环
+    this.animate();
+    
+    // 监听主题切换
+    this.listenThemeChange();
+  }
+
+  resize() {
+    this.width = window.innerWidth;
+    this.height = window.innerHeight;
+    this.canvas.width = this.width;
+    this.canvas.height = this.height;
+  }
+
+  createStars() {
+    this.stars = [];
+    for (let i = 0; i < this.count; i++) {
+      this.stars.push({
+        x: Math.random() * this.width,
+        y: Math.random() * this.height,
+        radius: Math.random() * 1.5,
+        color: this.getStarColor(),
+        speed: Math.random() * 0.5 + 0.1
+      });
+    }
+  }
+
+  getStarColor() {
+    // 根据当前主题模式选择星星颜色
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    
+    if (isDark) {
+      // 暗色模式下使用明亮的星星色
+      const colors = ['#ffffff', '#f8f9fa', '#e9ecef', '#dee2e6'];
+      return colors[Math.floor(Math.random() * colors.length)];
+    } else {
+      // 亮色模式下使用柔和的星星色
+      const colors = ['#495057', '#6c757d', '#adb5bd', '#ced4da'];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+  }
+
+  drawStars() {
+    this.ctx.clearRect(0, 0, this.width, this.height);
+    
+    this.stars.forEach(star => {
+      this.ctx.beginPath();
+      this.ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      this.ctx.fillStyle = star.color;
+      this.ctx.fill();
+      
+      // 星星移动
+      star.y -= star.speed;
+      if (star.y < 0) {
+        star.y = this.height;
+        star.x = Math.random() * this.width;
+      }
+    });
+  }
+
+  animate() {
+    this.drawStars();
+    requestAnimationFrame(() => this.animate());
+  }
+
+  listenThemeChange() {
+    // 监听主题变化事件
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.attributeName === 'data-theme') {
+          // 主题切换时更新星星颜色
+          this.updateStarsColor();
+        }
+      });
+    });
+    
+    observer.observe(document.documentElement, {
+      attributes: true
+    });
+  }
+
+  updateStarsColor() {
+    this.stars.forEach(star => {
+      star.color = this.getStarColor();
+    });
+  }
+}
+
+// 初始化宇宙背景
+function initUniverse() {
+  const universe = new Universe();
+  universe.init();
+}
+
+// 在DOM加载完成后初始化
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initUniverse);
+} else {
+  initUniverse();
+}
+
+// 导出供其他模块使用
+export { Universe, initUniverse };

@@ -253,9 +253,21 @@
     }
 }
 
-/* 黑夜模式适配 */
+/* 全局背景 - 根据主题模式显示不同图片 */
+#web_bg {
+    background: url('/img/beautiful.jpg') center/cover no-repeat fixed !important;
+}
+
+/* 暗色模式下显示不同的背景图片 */
+[data-theme="dark"] #web_bg {
+    background: url('/img/ku.jpg') center/cover no-repeat fixed !important;
+    filter: brightness(3.0);
+    /* 进一步增加亮度 */
+}
+
+/* 黑夜模式适配 - 使用不同的背景图片 */
 [data-theme="dark"] #aside-content>.card-widget.card-info {
-    background: url('/img/avabg/bg1.jpg') center/cover no-repeat;
+    background: url('/img/avabg/bg2.jpg') center/cover no-repeat;
     box-shadow: 0 6px 22px rgba(155, 93, 229, 0.25), 0 0 14px rgba(236, 72, 153, 0.2);
     filter: brightness(0.8) contrast(1.1);
 }
