@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Css复习 | heyvsheng的前端小库</title><meta name="author" content="heyvsheng"><meta name="copyright" content="heyvsheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="这里再次复习一下 &lt;header&gt;专门设置页眉的，头部，可以用作导航 z-index三维坐标系理解：  x轴：水平方向（左右） y轴：垂直方向（上下） z轴：垂直于屏幕的方向（前后）  其实说白了，就是控制优先级，这么理解，优先级越高，就在最上面，也可以叫：堆叠上下文 语法： 123.element &#123;  z-index: auto | number | inherit;&amp;#">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Css复习 | heyvsheng的前端小库</title><meta name="author" content="heyvsheng"><meta name="copyright" content="heyvsheng"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="很多记不住的标签和属性 这里再次复习一下 &lt;header&gt;专门设置页眉的，头部，可以用作导航 z-index——上下(优先级)级三维坐标系理解：  x轴：水平方向（左右） y轴：垂直方向（上下） z轴：垂直于屏幕的方向（前后）  其实说白了，就是控制优先级，这么理解，优先级越高，就在最上面，也可以叫：堆叠上下文 语法： 123.element &#123;  z-index: auto">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Css复习">
 <meta property="og:url" content="http://example.com/posts/6f6e644d.html">
 <meta property="og:site_name" content="heyvsheng的前端小库">
-<meta property="og:description" content="这里再次复习一下 &lt;header&gt;专门设置页眉的，头部，可以用作导航 z-index三维坐标系理解：  x轴：水平方向（左右） y轴：垂直方向（上下） z轴：垂直于屏幕的方向（前后）  其实说白了，就是控制优先级，这么理解，优先级越高，就在最上面，也可以叫：堆叠上下文 语法： 123.element &#123;  z-index: auto | number | inherit;&amp;#">
+<meta property="og:description" content="很多记不住的标签和属性 这里再次复习一下 &lt;header&gt;专门设置页眉的，头部，可以用作导航 z-index——上下(优先级)级三维坐标系理解：  x轴：水平方向（左右） y轴：垂直方向（上下） z轴：垂直于屏幕的方向（前后）  其实说白了，就是控制优先级，这么理解，优先级越高，就在最上面，也可以叫：堆叠上下文 语法： 123.element &#123;  z-index: auto">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/avatar_1.jpg">
 <meta property="article:published_time" content="2025-10-13T05:10:13.000Z">
-<meta property="article:modified_time" content="2025-10-13T11:04:04.106Z">
+<meta property="article:modified_time" content="2025-10-30T05:09:24.244Z">
 <meta property="article:author" content="heyvsheng">
 <meta property="article:tag" content="Css 前端">
 <meta name="twitter:card" content="summary">
@@ -18,7 +18,7 @@
   "url": "http://example.com/posts/6f6e644d.html",
   "image": "http://example.com/img/avatar_1.jpg",
   "datePublished": "2025-10-13T05:10:13.000Z",
-  "dateModified": "2025-10-13T11:04:04.106Z",
+  "dateModified": "2025-10-30T05:09:24.244Z",
   "author": [
     {
       "@type": "Person",
@@ -190,9 +190,10 @@
     btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
     btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
   }
-})()</script><div id="web_bg" style="background: transparent;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar_1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">heyvsheng的前端小库</span></a><a class="nav-page-title" href="/"><span class="site-name">Css复习</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Css复习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-10-13T05:10:13.000Z" title="发表于 2025-10-13 13:10:13">2025-10-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-13T11:04:04.106Z" title="更新于 2025-10-13 19:04:04">2025-10-13</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">3.1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>这里再次复习一下</p>
-<h3 id=""><a href="#" class="headerlink" title="&lt;header&gt;"></a><code>&lt;header&gt;</code></h3><p>专门设置页眉的，头部，可以用作导航</p>
-<h3 id="z-index"><a href="#z-index" class="headerlink" title="z-index"></a>z-index</h3><p>三维坐标系理解：</p>
+})()</script><div id="web_bg" style="background: transparent;"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar_1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">heyvsheng的前端小库</span></a><a class="nav-page-title" href="/"><span class="site-name">Css复习</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-comment"></i><span> 留言板</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Css复习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-10-13T05:10:13.000Z" title="发表于 2025-10-13 13:10:13">2025-10-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-10-30T05:09:24.244Z" title="更新于 2025-10-30 13:09:24">2025-10-30</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">7.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>30分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id=""><a href="#" class="headerlink" title=""></a></h1><p>很多记不住的标签和属性</p>
+<p>这里再次复习一下</p>
+<h2 id="-1"><a href="#-1" class="headerlink" title="&lt;header&gt;"></a><code>&lt;header&gt;</code></h2><p>专门设置页眉的，头部，可以用作导航</p>
+<h2 id="z-index——上下-优先级-级"><a href="#z-index——上下-优先级-级" class="headerlink" title="z-index——上下(优先级)级"></a>z-index——上下(优先级)级</h2><p>三维坐标系理解：</p>
 <ul>
 <li><strong>x轴</strong>：水平方向（左右）</li>
 <li><strong>y轴</strong>：垂直方向（上下）</li>
@@ -216,7 +217,7 @@
 <li><code>position: fixed</code></li>
 <li><code>position: sticky</code></li>
 </ul>
-<h3 id="box-shadow"><a href="#box-shadow" class="headerlink" title="box-shadow"></a>box-shadow</h3><p>让元素有立体感</p>
+<h2 id="box-shadow——阴影设置"><a href="#box-shadow——阴影设置" class="headerlink" title="box-shadow——阴影设置"></a>box-shadow——阴影设置</h2><p>让元素有立体感</p>
 <p><strong>基础语法</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">box-shadow</span>: h-offset v-offset blur spread color inset;</span><br></pre></td></tr></table></figure>
 
@@ -238,9 +239,9 @@
 
 
 
-<h3 id="关于flex布局"><a href="#关于flex布局" class="headerlink" title="关于flex布局"></a>关于flex布局</h3><p>直接看课，助于理解：</p>
+<h2 id="关于flex布局"><a href="#关于flex布局" class="headerlink" title="关于flex布局"></a>关于flex布局</h2><p>直接看课，助于理解：</p>
 <p>【flex弹性布局 动画详解系列 css科普教程-哔哩哔哩】 <a target="_blank" rel="noopener" href="https://b23.tv/l69lfp2">https://b23.tv/l69lfp2</a></p>
-<h3 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h3><p>是 CSS 中用于<strong>控制属性变化过程</strong>的属性，它让元素从一个状态平滑地过渡到另一个状态，而不是瞬间改变。</p>
+<h2 id="transition——过渡"><a href="#transition——过渡" class="headerlink" title="transition——过渡"></a>transition——过渡</h2><p>是 CSS 中用于<strong>控制属性变化过程</strong>的属性，它让元素从一个状态平滑地过渡到另一个状态，而不是瞬间改变。</p>
 <p><strong>完整语法</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transition</span>: property duration timing-function delay;</span><br></pre></td></tr></table></figure>
 
@@ -283,7 +284,7 @@
 <li><strong>显示相关</strong>：<code>opacity</code>, <code>visibility</code></li>
 <li><strong>字体相关</strong>：<code>font-size</code>, <code>line-height</code></li>
 </ul>
-<h3 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h3><p>是在元素边框（border）<strong>外部</strong>绘制的线条，用于突出显示元素，<strong>不占用布局空间</strong>（与 border 不同）。</p>
+<h2 id="outline——边框外部，突出显示元素"><a href="#outline——边框外部，突出显示元素" class="headerlink" title="outline——边框外部，突出显示元素"></a>outline——边框外部，突出显示元素</h2><p>是在元素边框（border）<strong>外部</strong>绘制的线条，用于突出显示元素，<strong>不占用布局空间</strong>（与 border 不同）。</p>
 <p><strong>完整语法</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">outline</span>: width style color;</span><br></pre></td></tr></table></figure>
 
@@ -330,21 +331,21 @@
 
 
 
-<h3 id="padding，border和margin"><a href="#padding，border和margin" class="headerlink" title="padding，border和margin"></a>padding，border和margin</h3><p>我在B站搜索了，出现了Box Model 盒子模型</p>
+<h2 id="padding，border和margin"><a href="#padding，border和margin" class="headerlink" title="padding，border和margin"></a>padding，border和margin</h2><p>我在B站搜索了，出现了Box Model 盒子模型</p>
 <p><strong>盒模型概念</strong></p>
 <p>在 CSS 中，每个元素都被看作一个矩形盒子，由内到外包括：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ 内容(content) ] ← [ 内边距(padding) ] ← [ 边框(border) ] ← [ 外边距(margin) ]</span><br></pre></td></tr></table></figure>
 
-<p><img src="D:\ProgramDataDDDD\xwechat_files\wxid_0jbghmpy6cgw22_7337\temp\RWTemp\2025-10\90b36115de368885e134282fc6ed617e.jpg" alt="90b36115de368885e134282fc6ed617e"></p>
-<p>padding和margin都是包含上下左右四边的</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 简写形式 */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span>;                 <span class="comment">/* 四个方向都是10px */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">20px</span>;            <span class="comment">/* 上下10px 左右20px */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span>;       <span class="comment">/* 上10px 左右20px 下30px */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span>;  <span class="comment">/* 上10px 右20px 下30px 左40px */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 简写形式 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span>;                 <span class="comment">/* 四个方向都是10px */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">20px</span>;            <span class="comment">/* 上下10px 左右20px */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span>;       <span class="comment">/* 上10px 左右20px 下30px */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span>;  <span class="comment">/* 上10px 右20px 下30px 左40px */</span></span><br></pre></td></tr></table></figure>
+<p><img src="D:\ProgramDataDDDD\xwechat_files\wxid_0jbghmpy6cgw22_7337\temp\RWTemp\2025-10\90b36115de368885e134282fc6ed617e.jpg"></p>
+<p><strong>padding和margin都是包含上下左右四边的</strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 简写形式 */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span>;                 <span class="comment">/* 四个方向都是10px */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">20px</span>;            <span class="comment">/* 上下10px 左右20px */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span>;       <span class="comment">/* 上10px 左右20px 下30px */</span></span><br><span class="line"><span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span>;  <span class="comment">/* 上10px 右20px 下30px 左40px */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 简写形式 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span>;                 <span class="comment">/* 四个方向都是10px */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">20px</span>;            <span class="comment">/* 上下10px 左右20px 这里还可以作为水平居中 */</span></span><br><span class="line">                              <span class="comment">/* 因为他是上下和左右，上下设置为0，左右设置为auto */</span></span><br><span class="line">                              <span class="comment">/* 块级元素就会自动居中，很神奇吧，这个用法真是妙 */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span>;       <span class="comment">/* 上10px 左右20px 下30px */</span></span><br><span class="line"><span class="attribute">margin</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span>;  <span class="comment">/* 上10px 右20px 下30px 左40px */</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>一些注意情况</strong></p>
 <ul>
 <li>如果是一个button，那么padding就是可点击范围，margin则不是</li>
 <li>当两个元素垂直方向上，margin-bottom遇上margin-top，会出现边距重叠的现象</li>
 </ul>
-<h4 id="Border（边框）"><a href="#Border（边框）" class="headerlink" title="Border（边框）"></a>Border（边框）</h4><p><strong>定义</strong></p>
+<h3 id="Border（边框）"><a href="#Border（边框）" class="headerlink" title="Border（边框）"></a>Border（边框）</h3><p><strong>定义</strong></p>
 <p>围绕在内边距和外边距之间的<strong>边界线</strong>。</p>
 <p><strong>语法</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 简写形式 */</span></span><br><span class="line"><span class="attribute">border</span>: <span class="number">2px</span> solid red;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 分别设置 */</span></span><br><span class="line"><span class="attribute">border-width</span>: <span class="number">2px</span>;</span><br><span class="line"><span class="attribute">border-style</span>: solid;</span><br><span class="line"><span class="attribute">border-color</span>: red;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 单独设置各边 */</span></span><br><span class="line"><span class="attribute">border-top</span>: <span class="number">1px</span> solid blue;</span><br><span class="line"><span class="attribute">border-right</span>: <span class="number">2px</span> dashed green;</span><br><span class="line"><span class="attribute">border-bottom</span>: <span class="number">3px</span> dotted purple;</span><br><span class="line"><span class="attribute">border-left</span>: <span class="number">1px</span> solid orange;</span><br></pre></td></tr></table></figure>
@@ -402,11 +403,11 @@
 <td align="left">❌ 不包含</td>
 </tr>
 </tbody></table>
-<h4 id="盒模型计算"><a href="#盒模型计算" class="headerlink" title="盒模型计算"></a>盒模型计算</h4><p><strong>标准盒模型（content-box）</strong></p>
+<h3 id="盒模型计算"><a href="#盒模型计算" class="headerlink" title="盒模型计算"></a>盒模型计算</h3><p><strong>标准盒模型（content-box）</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">5px</span> solid;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><strong>实际宽度</strong> &#x3D; 200px + 20px×2 + 5px×2 &#x3D; 250px</p>
-<h3 id="overflow"><a href="#overflow" class="headerlink" title="overflow"></a>overflow</h3><p>规定了当<strong>元素的内容</strong>超出其<strong>指定的区域</strong>时，应该如何处理。</p>
+<h2 id="overflow—元素内容超出区域该怎么做"><a href="#overflow—元素内容超出区域该怎么做" class="headerlink" title="overflow—元素内容超出区域该怎么做"></a>overflow—元素内容超出区域该怎么做</h2><p>规定了当<strong>元素的内容</strong>超出其<strong>指定的区域</strong>时，应该如何处理。</p>
 <p><code>overflow: hidden;</code> 的意思是：<strong>将溢出的内容直接裁剪掉，并且不可见，不提供任何滚动机制。</strong></p>
 <p>为了更好地理解 <code>hidden</code>，我们看一下 <code>overflow</code> 的其他常用值：</p>
 <table>
@@ -433,22 +434,25 @@
 <td align="left"><strong>智能</strong>。由浏览器决定，如果内容溢出，则显示滚动条；如果没有溢出，则不显示。这是最常用的值之一。</td>
 </tr>
 </tbody></table>
-<p>你可以使用 <code>overflow-x</code> 和 <code>overflow-y</code> 来分别控制水平和垂直方向的溢出行为（例如 <code>overflow-x: hidden; overflow-y: auto;</code>）。</p>
-<h4 id="触发BCF"><a href="#触发BCF" class="headerlink" title="触发BCF"></a>触发BCF</h4><p><strong>BFC 是什么？</strong><br>你可以把它理解为一个<strong>独立的布局容器</strong>，容器内部的布局不会影响到外部，外部的布局也不会影响到内部。</p>
+<p><strong>你可以使用 <strong><code>**overflow-x**</code></strong> 和 <strong><code>**overflow-y**</code></strong> 来分别控制水平和垂直方向的溢出行为（例如 <strong><code>**overflow-x: hidden; overflow-y: auto;**</code></strong>）。</strong></p>
+<h3 id="触发BCF"><a href="#触发BCF" class="headerlink" title="触发BCF"></a>触发BCF</h3><p><strong>BFC 是什么？</strong><br>你可以把它理解为一个<strong>独立的布局容器</strong>，容器内部的布局不会影响到外部，外部的布局也不会影响到内部。</p>
 <p><strong>触发 BFC 能解决什么问题？</strong></p>
 <ol>
-<li><p><strong>外边距合并</strong><br>在普通流中，相邻两个块级元素的上下外边距会发生合并。但如果其中一个元素被包裹在一个触发了 BFC 的容器内，它们的边距就不会合并。</p>
+<li><strong>外边距合并</strong><br>在普通流中，相邻两个块级元素的上下外边距会发生合并。但如果其中一个元素被包裹在一个触发了 BFC 的容器内，它们的边距就不会合并。</li>
+</ol>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.bfc-container</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden; <span class="comment">/* 触发BFC */</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.child</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">20px</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-</li>
-<li><p><strong>阻止元素被浮动元素覆盖</strong><br>如果一个元素旁边有一个浮动元素，它可能会被浮动元素覆盖。通过给这个元素设置 <code>overflow: hidden</code> 触发 BFC，它会避开浮动元素，形成环绕效果。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.float-left</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.normal-element</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden; <span class="comment">/* 触发BFC，使其不与浮动元素重叠 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<ol start="2">
+<li><strong>阻止元素被浮动元素覆盖</strong><br>如果一个元素旁边有一个浮动元素，它可能会被浮动元素覆盖。通过给这个元素设置 <code>overflow: hidden</code> 触发 BFC，它会避开浮动元素，形成环绕效果。</li>
 </ol>
-<h3 id="background-attachment"><a href="#background-attachment" class="headerlink" title="background-attachment"></a>background-attachment</h3><p>是 CSS 中用于控制背景图像滚动行为的属性，它决定了背景图像相对于视口或包含元素的固定方式。</p>
-<p><strong>属性值及效果</strong></p>
-<p>1**. <code>scroll</code>（默认值）**</p>
-<ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.float-left</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.normal-element</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden; <span class="comment">/* 触发BFC，使其不与浮动元素重叠 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="background-attachment-背景图像滚动"><a href="#background-attachment-背景图像滚动" class="headerlink" title="background-attachment 背景图像滚动"></a>background-attachment 背景图像滚动</h2><p>是 CSS 中用于控制背景图像滚动行为的属性，它决定了背景图像相对于视口或包含元素的固定方式。</p>
+<h3 id="属性值及效果"><a href="#属性值及效果" class="headerlink" title="属性值及效果"></a>属性值及效果</h3><h6 id="1-scroll（默认值）"><a href="#1-scroll（默认值）" class="headerlink" title="1. scroll（默认值）"></a>1. <code>scroll</code>（默认值）</h6><ul>
 <li><strong>效果</strong>：背景图像会随着页面的滚动而滚动</li>
 <li><strong>特点</strong>：<ul>
 <li>背景图像相对于元素本身固定</li>
@@ -461,8 +465,7 @@
 
 
 
-<p><strong>2. <code>fixed</code></strong></p>
-<ul>
+<h6 id="2-fixed"><a href="#2-fixed" class="headerlink" title="2. fixed"></a>2. <code>fixed</code></h6><ul>
 <li><strong>效果</strong>：背景图像相对于视口固定，不随页面滚动</li>
 <li><strong>特点</strong>：<ul>
 <li>创建视差滚动效果</li>
@@ -475,8 +478,7 @@
 
 
 
-<p><strong>3. <code>local</code></strong></p>
-<ul>
+<h6 id="3-local"><a href="#3-local" class="headerlink" title="3. local"></a>3. <code>local</code></h6><ul>
 <li><strong>效果</strong>：背景图像随元素内容的滚动而滚动</li>
 <li><strong>特点</strong>：<ul>
 <li>当元素有滚动条时，背景图像会随内容一起滚动</li>
@@ -488,8 +490,7 @@
 
 
 
-<p><strong>实际应用示例</strong></p>
-<p><strong>基本固定背景效果</strong></p>
+<h3 id="实际应用示例"><a href="#实际应用示例" class="headerlink" title="实际应用示例"></a>实际应用示例</h3><p><strong>基本固定背景效果</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.hero-section</span> &#123;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;hero-bg.jpg&quot;</span>);</span><br><span class="line">  <span class="attribute">background-attachment</span>: fixed;</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">  <span class="attribute">background-position</span>: center;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -508,13 +509,12 @@
 
 
 
-<h3 id="transform"><a href="#transform" class="headerlink" title="transform"></a>transform</h3><p>是 CSS 中一个非常强大的属性，允许你对元素进行<strong>2D或3D变换</strong>，包括旋转、缩放、倾斜、平移等，而不会影响文档流中的其他元素。</p>
-<p><strong>基本语法</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>: none | &lt;transform-function&gt;+;</span><br></pre></td></tr></table></figure>
+<h2 id="transform—2-3D变化"><a href="#transform—2-3D变化" class="headerlink" title="transform—2&#x2F;3D变化"></a>transform—2&#x2F;3D变化</h2><p>是 CSS 中一个非常强大的属性，允许你对元素进行<strong>2D或3D变换</strong>，包括旋转、缩放、倾斜、平移等，而不会影响文档流中的其他元素。</p>
+<h5 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>: none | &lt;transform-function&gt;+;</span><br></pre></td></tr></table></figure>
 
 
 
-<h4 id="2D-变换函数"><a href="#2D-变换函数" class="headerlink" title="2D 变换函数"></a>2D 变换函数</h4><p><strong>1. 平移（Translate）</strong></p>
+<h3 id="2D-变换函数"><a href="#2D-变换函数" class="headerlink" title="2D 变换函数"></a>2D 变换函数</h3><p><strong>1. 平移（Translate）</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 水平方向移动 */</span></span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">100px</span>);</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">50%</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 垂直方向移动 */</span></span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translateY</span>(-<span class="number">20px</span>);</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translateY</span>(<span class="number">25%</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 同时指定水平和垂直 */</span></span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">100px</span>, <span class="number">50px</span>);</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">50%</span>, -<span class="number">25%</span>);</span><br></pre></td></tr></table></figure>
 
 
@@ -544,7 +544,7 @@
 
 
 
-<h4 id="3D-变换函数"><a href="#3D-变换函数" class="headerlink" title="3D 变换函数"></a>3D 变换函数</h4><p><strong>1. 3D平移</strong></p>
+<h3 id="3D-变换函数"><a href="#3D-变换函数" class="headerlink" title="3D 变换函数"></a>3D 变换函数</h3><p><strong>1. 3D平移</strong></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>: <span class="built_in">translateZ</span>(<span class="number">100px</span>);</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate3d</span>(<span class="number">100px</span>, <span class="number">50px</span>, <span class="number">200px</span>);</span><br></pre></td></tr></table></figure>
 
 
@@ -564,18 +564,17 @@
 
 
 
-<h4 id="多重变换"><a href="#多重变换" class="headerlink" title="多重变换"></a>多重变换</h4><p>可以组合多个变换函数，<strong>按从右到左的顺序</strong>应用：</p>
+<h3 id="多重变换"><a href="#多重变换" class="headerlink" title="多重变换"></a>多重变换</h3><p>可以组合多个变换函数，<strong>按从右到左的顺序</strong>应用：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="comment">/* 先旋转45度，然后平移100px */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translateX</span>(<span class="number">100px</span>) <span class="built_in">rotate</span>(<span class="number">45deg</span>);</span><br><span class="line">  </span><br><span class="line">  <span class="comment">/* 先缩放，然后旋转，最后平移 */</span></span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">50px</span>, <span class="number">50px</span>) <span class="built_in">rotate</span>(<span class="number">30deg</span>) <span class="built_in">scale</span>(<span class="number">1.2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<p><strong>变换原点（transform-origin）</strong></p>
-<p>控制变换的基准点：</p>
+<h3 id="变换原点（transform-origin）"><a href="#变换原点（transform-origin）" class="headerlink" title="变换原点（transform-origin）"></a>变换原点（transform-origin）</h3><p>控制变换的基准点：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">transform-origin</span>: center center;    <span class="comment">/* 默认值 */</span></span><br><span class="line">  <span class="attribute">transform-origin</span>: left top;         <span class="comment">/* 左上角 */</span></span><br><span class="line">  <span class="attribute">transform-origin</span>: <span class="number">50px</span> <span class="number">50px</span>;        <span class="comment">/* 具体坐标 */</span></span><br><span class="line">  <span class="attribute">transform-origin</span>: <span class="number">0%</span> <span class="number">0%</span>;            <span class="comment">/* 百分比 */</span></span><br><span class="line">  <span class="attribute">transform-origin</span>: bottom right <span class="number">50px</span>; <span class="comment">/* 3D变换的Z轴原点 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-<h4 id="3D变换相关属性"><a href="#3D变换相关属性" class="headerlink" title="3D变换相关属性"></a>3D变换相关属性</h4><p><strong>1. perspective</strong></p>
+<h3 id="3D变换相关属性"><a href="#3D变换相关属性" class="headerlink" title="3D变换相关属性"></a>3D变换相关属性</h3><p><strong>1. perspective</strong></p>
 <p>设置观察者与z&#x3D;0平面的距离，创建3D感：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">perspective</span>: <span class="number">1000px</span>; <span class="comment">/* 数值越小，3D效果越强烈 */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 或者作为变换函数 */</span></span><br><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">transform</span>: <span class="built_in">perspective</span>(<span class="number">1000px</span>) <span class="built_in">rotateY</span>(<span class="number">45deg</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -601,45 +600,588 @@
 
 
 
-<h3 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h3><p>用于控制子元素在主轴（列）上的对齐方式</p>
+<h2 id="float—元素浮动，定位"><a href="#float—元素浮动，定位" class="headerlink" title="float—元素浮动，定位"></a>float—元素浮动，定位</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;    <span class="comment">/* 向左浮动 */</span></span><br><span class="line">  <span class="attribute">float</span>: right;   <span class="comment">/* 向右浮动 */</span></span><br><span class="line">  <span class="attribute">float</span>: none;    <span class="comment">/* 不浮动（默认值） */</span></span><br><span class="line">  <span class="attribute">float</span>: inline-start; <span class="comment">/* 逻辑属性，根据书写方向 */</span></span><br><span class="line">  <span class="attribute">float</span>: inline-end;   <span class="comment">/* 逻辑属性，根据书写方向 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="脱离文档流"><a href="#脱离文档流" class="headerlink" title="脱离文档流"></a><font style="color:rgb(15, 17, 21);">脱离文档流</font></h3><p><font style="color:rgb(15, 17, 21);">浮动元素会脱离正常的文档流，</font><strong><font style="color:rgb(15, 17, 21);">但不会完全脱离</font></strong><font style="color:rgb(15, 17, 21);">（与绝对定位不同）。</font></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: lightblue;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="浮动元素的特性"><a href="#浮动元素的特性" class="headerlink" title="浮动元素的特性"></a><font style="color:rgb(15, 17, 21);">浮动元素的特性</font></h3><ol>
+<li><strong><font style="color:rgb(15, 17, 21);">块级显示</font></strong><font style="color:rgb(15, 17, 21);">：浮动元素会自动变成块级元素</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">收缩包裹</font></strong><font style="color:rgb(15, 17, 21);">：宽度会收缩到内容宽度</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">脱离流但影响流</font></strong><font style="color:rgb(15, 17, 21);">：后面的元素会环绕它</font></li>
+</ol>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<p><font style="color:rgb(15, 17, 21);">示例：</font></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2025/png/42544612/1761785178736-e486fa8f-a296-4c34-80c1-944d8beca423.png"></p>
+<h2 id="清除浮动（Clearfix）"><a href="#清除浮动（Clearfix）" class="headerlink" title="清除浮动（Clearfix）"></a><font style="color:rgb(15, 17, 21);">清除浮动（Clearfix）</font></h2><p><strong><font style="color:rgb(15, 17, 21);">为什么需要清除浮动？</font></strong></p>
+<p><font style="color:rgb(15, 17, 21);">浮动元素会导致父元素高度塌陷。</font></p>
+<p><strong><font style="color:rgb(15, 17, 21);">清除浮动的方法</font></strong></p>
+<p><strong><font style="color:rgb(15, 17, 21);">方法1：空div清除</font></strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;container&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;float-left&quot;</span>&gt;</span>浮动元素<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;clearfix&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">方法2：父元素 overflow</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden; <span class="comment">/* 或 auto  裁剪溢出的内容，不可滚动查看。*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">方法3：伪元素清除（推荐）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="attribute">display</span>: table;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 兼容旧版IE */</span></span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">  *<span class="attribute">zoom</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">方法4：现代 flexbox&#x2F;grid 替代</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flow-root; <span class="comment">/* 现代清除浮动方式 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Float-的布局技巧"><a href="#Float-的布局技巧" class="headerlink" title="Float 的布局技巧"></a><font style="color:rgb(15, 17, 21);">Float 的布局技巧</font></h2><p><strong><font style="color:rgb(15, 17, 21);">图文混排</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.article</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">800px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.article-img</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">20px</span> <span class="number">10px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">shape-outside</span>: <span class="built_in">circle</span>(<span class="number">50%</span>); <span class="comment">/* 高级文字环绕 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">等高列布局</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.column</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">33.33%</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">9999px</span>;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: -<span class="number">9999px</span>;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.column-1</span> &#123; <span class="attribute">background</span>: <span class="number">#e74c3c</span>; &#125;</span><br><span class="line"><span class="selector-class">.column-2</span> &#123; <span class="attribute">background</span>: <span class="number">#3498db</span>; &#125;</span><br><span class="line"><span class="selector-class">.column-3</span> &#123; <span class="attribute">background</span>: <span class="number">#2ecc71</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Float-的局限性"><a href="#Float-的局限性" class="headerlink" title="Float 的局限性"></a><font style="color:rgb(15, 17, 21);">Float 的局限性</font></h2><p><strong><font style="color:rgb(15, 17, 21);">常见问题</font></strong></p>
+<ol>
+<li><strong><font style="color:rgb(15, 17, 21);">高度塌陷</font></strong><font style="color:rgb(15, 17, 21);">：父元素无法自动撑开</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">布局脆弱</font></strong><font style="color:rgb(15, 17, 21);">：容易受内容影响</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">响应式困难</font></strong><font style="color:rgb(15, 17, 21);">：需要大量媒体查询</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">清除浮动麻烦</font></strong><font style="color:rgb(15, 17, 21);">：需要额外处理</font></li>
+</ol>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<p><strong><font style="color:rgb(15, 17, 21);">与现代布局对比</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* Float 方式 */</span></span><br><span class="line"><span class="selector-class">.old-layout</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">width</span>: <span class="built_in">calc</span>(<span class="number">33.33%</span> - <span class="number">20px</span>);</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Flexbox 方式 */</span></span><br><span class="line"><span class="selector-class">.modern-layout</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-wrap</span>: wrap;</span><br><span class="line">  <span class="attribute">gap</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.modern-layout</span> &gt; * &#123;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">1</span> <span class="number">1</span> <span class="built_in">calc</span>(<span class="number">33.33%</span> - <span class="number">20px</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* Grid 方式 */</span></span><br><span class="line"><span class="selector-class">.grid-layout</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="built_in">repeat</span>(<span class="number">3</span>, <span class="number">1</span>fr);</span><br><span class="line">  <span class="attribute">gap</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<h2 id="border-radius——设置元素圆角"><a href="#border-radius——设置元素圆角" class="headerlink" title="border-radius——设置元素圆角"></a>border-radius——<font style="color:rgb(15, 17, 21);">设置元素圆角</font></h2><h3 id="基本语法-1"><a href="#基本语法-1" class="headerlink" title="基本语法"></a><font style="color:rgb(15, 17, 21);">基本语法</font></h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">值的类型</font></strong></p>
 <ul>
-<li><strong>Flexbox</strong>：控制 flex 项目在主轴上的对齐</li>
-<li><strong>Grid</strong>：控制网格项目在行轴上的对齐</li>
+<li><strong><font style="color:rgb(15, 17, 21);">长度值</font></strong><font style="color:rgb(15, 17, 21);">：</font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;px&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;em&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;rem&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">等</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">百分比</font></strong><font style="color:rgb(15, 17, 21);">：相对于元素的尺寸计算</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">全局值</font></strong><font style="color:rgb(15, 17, 21);">：</font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;inherit&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;initial&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;unset&lt;/font&gt;</code></li>
 </ul>
-<p><strong>属性值及含义</strong></p>
-<table>
+<p><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);"></font></p>
+<p><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);"></font></p>
+<p><strong><font style="color:rgb(15, 17, 21);">2. 值的设置方式</font></strong></p>
+<p><strong><font style="color:rgb(15, 17, 21);">2.1 单一值（四个角相同）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span>; <span class="comment">/* 所有四个角都是10px */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">2.2 两个值（对角对称）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span> <span class="number">20px</span>; </span><br><span class="line">  <span class="comment">/* 左上角&amp;右下角: 10px, 右上角&amp;左下角: 20px */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">2.3 三个值</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span>;</span><br><span class="line">  <span class="comment">/* 左上角: 10px, 右上角&amp;左下角: 20px, 右下角: 30px */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">2.4 四个值（顺时针顺序）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span>;</span><br><span class="line">  <span class="comment">/* 左上角:10px, 右上角:20px, 右下角:30px, 左下角:40px */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="高级语法：椭圆圆角"><a href="#高级语法：椭圆圆角" class="headerlink" title=" 高级语法：椭圆圆角"></a><font style="color:rgb(15, 17, 21);"> 高级语法：椭圆圆角</font></h3><p><strong><font style="color:rgb(15, 17, 21);">水平半径 &#x2F; 垂直半径</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: 水平半径 / 垂直半径;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">具体示例</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 圆形 */</span></span><br><span class="line"><span class="selector-class">.circle</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span>; <span class="comment">/* 水平和垂直半径都是50% */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 椭圆形 */</span></span><br><span class="line"><span class="selector-class">.ellipse</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">50%</span> / <span class="number">30%</span>; <span class="comment">/* 水平50%，垂直30% */</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 复杂椭圆 */</span></span><br><span class="line"><span class="selector-class">.complex</span> &#123;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span> / <span class="number">5px</span> <span class="number">10px</span> <span class="number">15px</span> <span class="number">20px</span>;</span><br><span class="line">  <span class="comment">/* </span></span><br><span class="line"><span class="comment">  左上角: 10px/5px</span></span><br><span class="line"><span class="comment">  右上角: 20px/10px  </span></span><br><span class="line"><span class="comment">  右下角: 30px/15px</span></span><br><span class="line"><span class="comment">  左下角: 40px/20px</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="单独控制每个角"><a href="#单独控制每个角" class="headerlink" title="单独控制每个角"></a><font style="color:rgb(15, 17, 21);">单独控制每个角</font></h3><p><strong><font style="color:rgb(15, 17, 21);">单独属性</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">border-top-left-radius</span>: <span class="number">10px</span>;      <span class="comment">/* 左上角 */</span></span><br><span class="line">  <span class="attribute">border-top-right-radius</span>: <span class="number">20px</span>;     <span class="comment">/* 右上角 */</span></span><br><span class="line">  <span class="attribute">border-bottom-right-radius</span>: <span class="number">30px</span>;  <span class="comment">/* 右下角 */</span></span><br><span class="line">  <span class="attribute">border-bottom-left-radius</span>: <span class="number">40px</span>;   <span class="comment">/* 左下角 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">单独属性的椭圆语法</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">border-top-left-radius</span>: <span class="number">20px</span> <span class="number">10px</span>;     <span class="comment">/* 水平20px 垂直10px */</span></span><br><span class="line">  <span class="attribute">border-top-right-radius</span>: <span class="number">30px</span> <span class="number">15px</span>;    <span class="comment">/* 水平30px 垂直15px */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<h2 id="resize——允许用户调整元素大小"><a href="#resize——允许用户调整元素大小" class="headerlink" title="resize——允许用户调整元素大小"></a>resize——<font style="color:rgb(15, 17, 21);">允许用户调整元素大小</font></h2><p>主要的属性值包括：</p>
+<ol>
+<li><code>resize: none;</code><ul>
+<li>表示元素不能被用户调整大小。这是默认值。</li>
+</ul>
+</li>
+<li><code>resize: both;</code><ul>
+<li>表示元素可以在水平和垂直方向上自由调整大小。</li>
+</ul>
+</li>
+<li><code>resize: horizontal;</code><ul>
+<li>表示元素只能在水平方向上调整大小。</li>
+</ul>
+</li>
+<li><code>resize: vertical;</code><ul>
+<li>表示元素只能在垂直方向上调整大小。</li>
+</ul>
+</li>
+</ol>
+<p><strong>除了上面列出的主要属性值外，还有一些补充的特定值和注意事项：</strong></p>
+<ol>
+<li><code>resize: inherit;</code><ul>
+<li>表示元素继承其父元素的 resize 属性。如果未设置，则与 resize: none; 相同。</li>
+</ul>
+</li>
+<li><code>resize: initial;</code><ul>
+<li>表示元素使用其初始的 resize 属性值，通常是 none。</li>
+</ul>
+</li>
+<li><strong>注意事项：</strong><ul>
+<li>resize 属性通常应用于可滚动元素（例如 <textarea>、<iframe>），以提供用户更好的互动体验。</li>
+<li>不是所有浏览器都支持 resize 属性，特别是在一些移动设备上。</li>
+<li>对于支持 resize 属性的浏览器，用户通常可以通过拖动元素的边界来调整大小，这有时可能会影响到布局和用户体验的一致性。</li>
+</ul>
+</li>
+</ol>
+<h2 id="flex-direction——Flex-容器的主轴方向"><a href="#flex-direction——Flex-容器的主轴方向" class="headerlink" title="flex-direction——Flex 容器的主轴方向"></a>flex-direction——<font style="color:rgb(15, 17, 21);">Flex 容器的主轴方向</font></h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title=" 基本概念"></a><font style="color:rgb(15, 17, 21);"> 基本概念</font></h3><p><strong><font style="color:rgb(15, 17, 21);">语法</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-direction</span>: value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>主轴和侧轴</strong></p>
+<ol>
+<li>在flex布局中，是分为主轴和侧轴两个方向的<ul>
+<li><pre><code>   默认主轴就是x轴方向，水平向右
+</code></pre>
+</li>
+<li><pre><code>   默认侧轴方向就是y轴方向，垂直向下
+</code></pre>
+</li>
+</ul>
+</li>
+<li>属性值<ul>
+<li><pre><code>  flex-direction属性决定主轴的方向(即项目的排列方向)
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<p>当然，<strong>主轴和侧轴是会变化的，就看flex-direction设置谁为主轴，剩下的就是侧轴了。<strong>但是</strong>子元素是跟着主轴来进行排列的</strong></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2025/png/42544612/1761790612290-1aefc51c-b274-48ac-a88d-0162c530dd36.png"></p>
+<h3 id="不同方向的轴对应关系"><a href="#不同方向的轴对应关系" class="headerlink" title="不同方向的轴对应关系"></a><font style="color:rgb(15, 17, 21);">不同方向的轴对应关系</font></h3><table>
 <thead>
 <tr>
-<th align="left">属性值</th>
-<th align="left">描述</th>
+<th><font style="color:rgb(15, 17, 21);">flex-direction</font></th>
+<th><font style="color:rgb(15, 17, 21);">主轴方向</font></th>
+<th><font style="color:rgb(15, 17, 21);">交叉轴方向</font></th>
+<th><font style="color:rgb(15, 17, 21);">justify-content 作用</font></th>
+<th><font style="color:rgb(15, 17, 21);">align-items 作用</font></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>flex-start</code></td>
-<td align="left">项目向主轴起点对齐（默认值）</td>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;row&lt;/font&gt;</code></td>
+<td><font style="color:rgb(15, 17, 21);">水平 →</font></td>
+<td><font style="color:rgb(15, 17, 21);">垂直 ↓</font></td>
+<td><font style="color:rgb(15, 17, 21);">水平对齐</font></td>
+<td><font style="color:rgb(15, 17, 21);">垂直对齐</font></td>
 </tr>
 <tr>
-<td align="left"><code>flex-end</code></td>
-<td align="left">项目向主轴终点对齐</td>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;row-reverse&lt;/font&gt;</code></td>
+<td><font style="color:rgb(15, 17, 21);">水平 ←</font></td>
+<td><font style="color:rgb(15, 17, 21);">垂直 ↓</font></td>
+<td><font style="color:rgb(15, 17, 21);">水平对齐</font></td>
+<td><font style="color:rgb(15, 17, 21);">垂直对齐</font></td>
 </tr>
 <tr>
-<td align="left"><code>center</code></td>
-<td align="left">项目在主轴上居中对齐</td>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;column&lt;/font&gt;</code></td>
+<td><font style="color:rgb(15, 17, 21);">垂直 ↓</font></td>
+<td><font style="color:rgb(15, 17, 21);">水平 →</font></td>
+<td><font style="color:rgb(15, 17, 21);">垂直对齐</font></td>
+<td><font style="color:rgb(15, 17, 21);">水平对齐</font></td>
 </tr>
 <tr>
-<td align="left"><code>space-between</code></td>
-<td align="left">项目均匀分布，首尾项目贴边</td>
-</tr>
-<tr>
-<td align="left"><code>space-around</code></td>
-<td align="left">项目均匀分布，每个项目两侧空间相等</td>
-</tr>
-<tr>
-<td align="left"><code>space-evenly</code></td>
-<td align="left">项目均匀分布，所有间距相等</td>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;column-reverse&lt;/font&gt;</code></td>
+<td><font style="color:rgb(15, 17, 21);">垂直 ↑</font></td>
+<td><font style="color:rgb(15, 17, 21);">水平 →</font></td>
+<td><font style="color:rgb(15, 17, 21);">垂直对齐</font></td>
+<td><font style="color:rgb(15, 17, 21);">水平对齐</font></td>
 </tr>
 </tbody></table>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">heyvsheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/6f6e644d.html">http://example.com/posts/6f6e644d.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">heyvsheng的前端小库</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Css-%E5%89%8D%E7%AB%AF/">Css 前端</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar_1.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width no-desc" href="/posts/ae57c2e7.html" title="算法刷题打卡"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">算法刷题打卡</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar_1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">heyvsheng</div><div class="author-info-description">记录代码记录学习笔记，记录一切想记录的事情。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/heyvsheng"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-star" style="color:#facc15"></i><span>公告</span></div><div class="announcement_content">欢迎来看我的分享小库</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">&lt;header&gt;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#z-index"><span class="toc-number">2.</span> <span class="toc-text">z-index</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#box-shadow"><span class="toc-number">3.</span> <span class="toc-text">box-shadow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Eflex%E5%B8%83%E5%B1%80"><span class="toc-number">4.</span> <span class="toc-text">关于flex布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#transition"><span class="toc-number">5.</span> <span class="toc-text">transition</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#outline"><span class="toc-number">6.</span> <span class="toc-text">outline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#padding%EF%BC%8Cborder%E5%92%8Cmargin"><span class="toc-number">7.</span> <span class="toc-text">padding，border和margin</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Border%EF%BC%88%E8%BE%B9%E6%A1%86%EF%BC%89"><span class="toc-number">7.1.</span> <span class="toc-text">Border（边框）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AE%A1%E7%AE%97"><span class="toc-number">7.2.</span> <span class="toc-text">盒模型计算</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#overflow"><span class="toc-number">8.</span> <span class="toc-text">overflow</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91BCF"><span class="toc-number">8.1.</span> <span class="toc-text">触发BCF</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#background-attachment"><span class="toc-number">9.</span> <span class="toc-text">background-attachment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#transform"><span class="toc-number">10.</span> <span class="toc-text">transform</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2D-%E5%8F%98%E6%8D%A2%E5%87%BD%E6%95%B0"><span class="toc-number">10.1.</span> <span class="toc-text">2D 变换函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3D-%E5%8F%98%E6%8D%A2%E5%87%BD%E6%95%B0"><span class="toc-number">10.2.</span> <span class="toc-text">3D 变换函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E9%87%8D%E5%8F%98%E6%8D%A2"><span class="toc-number">10.3.</span> <span class="toc-text">多重变换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3D%E5%8F%98%E6%8D%A2%E7%9B%B8%E5%85%B3%E5%B1%9E%E6%80%A7"><span class="toc-number">10.4.</span> <span class="toc-text">3D变换相关属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#justify-content"><span class="toc-number">11.</span> <span class="toc-text">justify-content</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/6f6e644d.html" title="Css复习">Css复习</a><time datetime="2025-10-13T05:10:13.000Z" title="发表于 2025-10-13 13:10:13">2025-10-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ae57c2e7.html" title="算法刷题打卡">算法刷题打卡</a><time datetime="2025-10-11T12:02:55.000Z" title="发表于 2025-10-11 20:02:55">2025-10-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/73626faf.html" title="魔改教程">魔改教程</a><time datetime="2025-10-11T08:29:21.000Z" title="发表于 2025-10-11 16:29:21">2025-10-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/4a17b156.html" title="目前的计划">目前的计划</a><time datetime="2025-10-08T16:36:47.730Z" title="发表于 2025-10-09 00:36:47">2025-10-09</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By heyvsheng</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><script src="/js/tw_cn.js?v=5.5.1"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><div class="aplayer no-darkmode" data-id="1708664797" data-server="tencent" data-typr="playlist" data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true"></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer src="/js/cursor.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
+<h2 id="justify-content——主轴上的对齐方式"><a href="#justify-content——主轴上的对齐方式" class="headerlink" title="justify-content——主轴上的对齐方式"></a>justify-content——<strong><font style="color:rgb(15, 17, 21);">主轴</font></strong><font style="color:rgb(15, 17, 21);">上的对齐方式</font></h2><p><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;justify-content&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> 是 Flexbox 和 Grid 布局中至关重要的属性，它定义了项目在</font><strong><font style="color:rgb(15, 17, 21);">主轴</font></strong><font style="color:rgb(15, 17, 21);">上的对齐方式。这个属性控制着容器内多余空间的分配方式。</font></p>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<h3 id="属性值全面解析"><a href="#属性值全面解析" class="headerlink" title="属性值全面解析"></a><font style="color:rgb(15, 17, 21);">属性值全面解析</font></h3><p><strong><font style="color:rgb(15, 17, 21);"> </font></strong><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;flex-start&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 主轴起点对齐（默认值）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: flex-start;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目从主轴起点开始排列</font></li>
+<li><font style="color:rgb(15, 17, 21);">所有多余空间位于主轴末端</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────────┐</span><br><span class="line">│ [Item1] [Item2] [Item3]                 │</span><br><span class="line">│ ↑ 从这里开始，多余空间在右边            │</span><br><span class="line">└─────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;flex-end&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 主轴末端对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目从主轴末端开始排列</font></li>
+<li><font style="color:rgb(15, 17, 21);">所有多余空间位于主轴起点</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────────┐</span><br><span class="line">│                 [Item1] [Item2] [Item3] │</span><br><span class="line">│ 多余空间在左边，项目从右边开始          │</span><br><span class="line">└─────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;center&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 居中对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目在主轴方向上居中对齐</font></li>
+<li><font style="color:rgb(15, 17, 21);">多余空间平均分布在项目两侧</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────────┐</span><br><span class="line">│        [Item1] [Item2] [Item3]          │</span><br><span class="line">│ 左右两侧空间相等                        │</span><br><span class="line">└─────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);"></font></strong><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;space-between&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 两端对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">第一个项目在主轴起点，最后一个项目在主轴末端</font></li>
+<li><font style="color:rgb(15, 17, 21);">项目之间的间隔相等</font></li>
+<li><font style="color:rgb(15, 17, 21);">容器两端没有额外空间</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────────┐</span><br><span class="line">│ [Item1]    [Item2]    [Item3]           │</span><br><span class="line">│ 项目间距相等，两端贴边                  │</span><br><span class="line">└─────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://cdn.nlark.com/yuque/0/2025/png/42544612/1761796582264-09974718-1c8b-4aeb-a08a-2aa063cd2213.png"></p>
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;space-around&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 环绕对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">每个项目两侧的空间相等</font></li>
+<li><font style="color:rgb(15, 17, 21);">项目之间的间隔是项目与容器边缘间隔的两倍</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────────┐</span><br><span class="line">│  [Item1]    [Item2]    [Item3]          │</span><br><span class="line">│ 每个项目两侧空间相等                    │</span><br><span class="line">└─────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;space-evenly&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 均匀对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-evenly;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">所有间隔完全相等</font></li>
+<li><font style="color:rgb(15, 17, 21);">项目之间、项目与容器边缘之间的间隔都相同</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────────────────────┐</span><br><span class="line">│   [Item1]    [Item2]    [Item3]         │</span><br><span class="line">│ 所有间隔完全相等                        │</span><br><span class="line">└─────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+<h2 id="align-items——控制交叉轴对齐方式"><a href="#align-items——控制交叉轴对齐方式" class="headerlink" title="align-items——控制交叉轴对齐方式"></a>align-items——<font style="color:rgb(15, 17, 21);">控制</font><strong><font style="color:rgb(15, 17, 21);">交叉轴</font></strong><font style="color:rgb(15, 17, 21);">对齐方式</font></h2><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a><font style="color:rgb(15, 17, 21);">语法</font></h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">align-items</span>: value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><strong><font style="color:rgb(15, 17, 21);">交叉轴</font></strong><font style="color:rgb(15, 17, 21);">：与主轴垂直的方向</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">主轴方向</font></strong><font style="color:rgb(15, 17, 21);">由</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;flex-direction&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">决定：</font><ul>
+<li><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;row&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">：主轴水平 → 交叉轴垂直 ↓</font></li>
+<li><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;column&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">：主轴垂直 ↓ 交叉轴水平 →</font></li>
+</ul>
+</li>
+</ul>
+<h3 id="属性值全面解析-1"><a href="#属性值全面解析-1" class="headerlink" title="属性值全面解析"></a><font style="color:rgb(15, 17, 21);">属性值全面解析</font></h3><p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;stretch&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 拉伸（默认值）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: stretch;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目在交叉轴方向上被拉伸以填满容器</font></li>
+<li><font style="color:rgb(15, 17, 21);">如果项目有固定尺寸，则不会被拉伸</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">示例：</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">align-items</span>: stretch;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">80px</span>;</span><br><span class="line">  <span class="comment">/* 不设置高度，由拉伸决定 */</span></span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#3498db</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><font style="color:rgb(15, 17, 21);">所有项目的高度都会拉伸到 300px（容器高度）。</font></p>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;flex-start&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 交叉轴起点对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: flex-start;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目在交叉轴起点对齐</font></li>
+<li><font style="color:rgb(15, 17, 21);">项目尺寸由内容或设定的尺寸决定</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────┐</span><br><span class="line">│ [Item1]                 │</span><br><span class="line">│ [Item2]                 │</span><br><span class="line">│ [Item3]                 │</span><br><span class="line">│                         │</span><br><span class="line">│                         │ ← 多余空间在底部</span><br><span class="line">└─────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;flex-end&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 交叉轴末端对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: flex-end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目在交叉轴末端对齐</font></li>
+<li><font style="color:rgb(15, 17, 21);">项目尺寸由内容或设定的尺寸决定</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────┐</span><br><span class="line">│                         │</span><br><span class="line">│                         │ ← 多余空间在顶部</span><br><span class="line">│ [Item1]                 │</span><br><span class="line">│ [Item2]                 │</span><br><span class="line">│ [Item3]                 │</span><br><span class="line">└─────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">2.4 </font></strong><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;center&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 交叉轴居中对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目在交叉轴方向上居中对齐</font></li>
+<li><font style="color:rgb(15, 17, 21);">多余空间平均分布在项目两侧</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">视觉效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">┌─────────────────────────┐</span><br><span class="line">│                         │</span><br><span class="line">│ [Item1]                 │</span><br><span class="line">│ [Item2]                 │</span><br><span class="line">│ [Item3]                 │</span><br><span class="line">│                         │</span><br><span class="line">└─────────────────────────┘</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);"></font></strong><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;baseline&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 基线对齐</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">align-items</span>: baseline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">项目按照它们的基线对齐</font></li>
+<li><font style="color:rgb(15, 17, 21);">特别适用于文本内容的对齐</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">示例：</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">align-items</span>: baseline;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> solid <span class="number">#333</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#3498db</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">1</span>) &#123; <span class="attribute">font-size</span>: <span class="number">16px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">2</span>) &#123; <span class="attribute">font-size</span>: <span class="number">24px</span>; &#125;</span><br><span class="line"><span class="selector-class">.item</span><span class="selector-pseudo">:nth-child</span>(<span class="number">3</span>) &#123; <span class="attribute">font-size</span>: <span class="number">32px</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+<p><font style="color:rgb(15, 17, 21);">所有项目的文本基线会对齐在同一水平线上。</font></p>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<h2 id="gap——布局中项目间距"><a href="#gap——布局中项目间距" class="headerlink" title="gap——布局中项目间距"></a><font style="color:rgb(15, 17, 21);">gap——布局中项目间距</font></h2><h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a><font style="color:rgb(15, 17, 21);">语法</font></h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid | flex | multi-column;</span><br><span class="line">  <span class="attribute">gap</span>: value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="简写属性"><a href="#简写属性" class="headerlink" title="简写属性"></a><font style="color:rgb(15, 17, 21);">简写属性</font></h3><p><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;gap&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> 是 </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;row-gap&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> 和 </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;column-gap&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> 的简写形式：</font></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 完整写法 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">row-gap</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">column-gap</span>: <span class="number">20px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 简写写法 */</span></span><br><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">gap</span>: <span class="number">10px</span> <span class="number">20px</span>; <span class="comment">/* 行间距 列间距 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="属性值详解"><a href="#属性值详解" class="headerlink" title="属性值详解"></a><font style="color:rgb(15, 17, 21);">属性值详解</font></h3><p><strong><font style="color:rgb(15, 17, 21);">单一值</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">gap</span>: <span class="number">20px</span>; <span class="comment">/* 行间距和列间距都是20px */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);">两个值</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">gap</span>: <span class="number">10px</span> <span class="number">20px</span>; <span class="comment">/* 行间距10px，列间距20px */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="支持的值类型"><a href="#支持的值类型" class="headerlink" title="支持的值类型"></a><font style="color:rgb(15, 17, 21);">支持的值类型</font></h3><ul>
+<li><strong><font style="color:rgb(15, 17, 21);">长度值</font></strong><font style="color:rgb(15, 17, 21);">:</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;px&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;em&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;rem&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;vw&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">,</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;vh&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">等</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">百分比</font></strong><font style="color:rgb(15, 17, 21);">: 相对于容器尺寸计算</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">全局值</font></strong><font style="color:rgb(15, 17, 21);">: </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;initial&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">, </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;inherit&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);">, </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;unset&lt;/font&gt;</code></li>
+</ul>
+<p><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);"></font></p>
+<p><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);"></font></p>
+<p><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);"></font></p>
+<h2 id="white-space——控制元素内空白字符"><a href="#white-space——控制元素内空白字符" class="headerlink" title="white-space——控制元素内空白字符"></a><font style="color:rgb(15, 17, 21);">white-space——</font><font style="color:rgb(15, 17, 21);">控制元素内空白字符</font></h2><p><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;white-space&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> 是 CSS 中控制元素内空白字符（空格、制表符、换行符）处理方式的重要属性。它决定了文本内容中的空白如何显示以及如何处理自动换行。</font></p>
+<h3 id="基本概念和语法"><a href="#基本概念和语法" class="headerlink" title="基本概念和语法"></a><font style="color:rgb(15, 17, 21);">基本概念和语法</font></h3><p><strong><font style="color:rgb(15, 17, 21);">语法</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.element</span> &#123;</span><br><span class="line">  <span class="attribute">white-space</span>: value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">空白字符类型</font></strong></p>
+<ul>
+<li><strong><font style="color:rgb(15, 17, 21);">空格</font></strong><font style="color:rgb(15, 17, 21);">：普通的空格字符</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">制表符</font></strong><font style="color:rgb(15, 17, 21);">：</font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;\t&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">字符</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">换行符</font></strong><font style="color:rgb(15, 17, 21);">：</font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;\n&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">字符</font></li>
+</ul>
+<p><font style="color:rgb(15, 17, 21);"></font></p>
+<h3 id="属性值全面解析-2"><a href="#属性值全面解析-2" class="headerlink" title="属性值全面解析"></a><font style="color:rgb(15, 17, 21);">属性值全面解析</font></h3><p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;normal&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 正常处理（默认值）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-normal</span> &#123;</span><br><span class="line">  <span class="attribute">white-space</span>: normal;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">合并连续的空白字符为一个空格</font></li>
+<li><font style="color:rgb(15, 17, 21);">文本自动换行</font></li>
+<li><font style="color:rgb(15, 17, 21);">忽略换行符</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">示例效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;Hello     World\nHow are you?&quot;</span><br><span class="line">输出: &quot;Hello World How are you?&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><strong><font style="color:rgb(15, 17, 21);"> </font></strong><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;nowrap&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 禁止换行</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-nowrap</span> &#123;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">合并连续的空白字符</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">禁止</font></strong><font style="color:rgb(15, 17, 21);">文本自动换行</font></li>
+<li><font style="color:rgb(15, 17, 21);">忽略换行符</font></li>
+<li><font style="color:rgb(15, 17, 21);">文本会在一行内显示，可能溢出容器</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">示例效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;Hello     World\nHow are you?&quot;</span><br><span class="line">输出: &quot;Hello World How are you?&quot; (单行显示)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 保留空白（类似 </font></strong><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;&lt;pre&gt;&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> 标签）</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-pre</span> &#123;</span><br><span class="line">  <span class="attribute">white-space</span>: pre;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><strong><font style="color:rgb(15, 17, 21);">保留</font></strong><font style="color:rgb(15, 17, 21);">所有空白字符（空格、制表符、换行符）</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">禁止</font></strong><font style="color:rgb(15, 17, 21);">文本自动换行</font></li>
+<li><font style="color:rgb(15, 17, 21);">完全按照源代码格式显示</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">示例效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;Hello     World\nHow are you?&quot;</span><br><span class="line">输出: </span><br><span class="line">&quot;Hello     World</span><br><span class="line">How are you?&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre-wrap&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 保留空白并允许换行</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-pre-wrap</span> &#123;</span><br><span class="line">  <span class="attribute">white-space</span>: pre-wrap;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><strong><font style="color:rgb(15, 17, 21);">保留</font></strong><font style="color:rgb(15, 17, 21);">所有空白字符</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">允许</font></strong><font style="color:rgb(15, 17, 21);">文本自动换行</font></li>
+<li><font style="color:rgb(15, 17, 21);">结合了</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">和自动换行的优点</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">示例效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;Hello     World\nHow are you?&quot;</span><br><span class="line">输出: </span><br><span class="line">&quot;Hello     World</span><br><span class="line">How are you?&quot; (会根据容器宽度自动换行)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre-line&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 保留换行符但合并空格</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-pre-line</span> &#123;</span><br><span class="line">  <span class="attribute">white-space</span>: pre-line;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><font style="color:rgb(15, 17, 21);">合并连续的空白字符为一个空格</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">保留</font></strong><font style="color:rgb(15, 17, 21);">换行符</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">允许</font></strong><font style="color:rgb(15, 17, 21);">文本自动换行</font></li>
+</ul>
+<p><strong><font style="color:rgb(15, 17, 21);">示例效果：</font></strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: &quot;Hello     World\nHow are you?&quot;</span><br><span class="line">输出: </span><br><span class="line">&quot;Hello World</span><br><span class="line">How are you?&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p><code>**&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;break-spaces&lt;/font&gt;**</code><strong><font style="color:rgb(15, 17, 21);"> - 保留空白并在空格处换行</font></strong></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text-break-spaces</span> &#123;</span><br><span class="line">  <span class="attribute">white-space</span>: break-spaces;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong><font style="color:rgb(15, 17, 21);">行为：</font></strong></p>
+<ul>
+<li><strong><font style="color:rgb(15, 17, 21);">保留</font></strong><font style="color:rgb(15, 17, 21);">所有空白字符</font></li>
+<li><strong><font style="color:rgb(15, 17, 21);">允许</font></strong><font style="color:rgb(15, 17, 21);">文本自动换行</font></li>
+<li><font style="color:rgb(15, 17, 21);">与</font><font style="color:rgb(15, 17, 21);"> </font><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre-wrap&lt;/font&gt;</code><font style="color:rgb(15, 17, 21);"> </font><font style="color:rgb(15, 17, 21);">的区别：可以在任意空格位置换行</font></li>
+</ul>
+<h3 id="行为对比表格"><a href="#行为对比表格" class="headerlink" title="行为对比表格"></a><font style="color:rgb(15, 17, 21);">行为对比表格</font></h3><table>
+<thead>
+<tr>
+<th><font style="color:rgb(15, 17, 21);">属性值</font></th>
+<th><font style="color:rgb(15, 17, 21);">换行符</font></th>
+<th><font style="color:rgb(15, 17, 21);">空格和制表符</font></th>
+<th><font style="color:rgb(15, 17, 21);">文本换行</font></th>
+<th><font style="color:rgb(15, 17, 21);">行尾空格处理</font></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;normal&lt;/font&gt;</code></td>
+<td><font style="color:rgb(15, 17, 21);">忽略</font></td>
+<td><font style="color:rgb(15, 17, 21);">合并</font></td>
+<td><font style="color:rgb(15, 17, 21);">允许</font></td>
+<td><font style="color:rgb(15, 17, 21);">删除</font></td>
+</tr>
+<tr>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;nowrap&lt;/font&gt;</code></td>
+<td><font style="color:rgb(15, 17, 21);">忽略</font></td>
+<td><font style="color:rgb(15, 17, 21);">合并</font></td>
+<td><strong><font style="color:rgb(15, 17, 21);">禁止</font></strong></td>
+<td><font style="color:rgb(15, 17, 21);">删除</font></td>
+</tr>
+<tr>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre&lt;/font&gt;</code></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+<td><strong><font style="color:rgb(15, 17, 21);">禁止</font></strong></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+</tr>
+<tr>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre-wrap&lt;/font&gt;</code></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+<td><font style="color:rgb(15, 17, 21);">允许</font></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+</tr>
+<tr>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;pre-line&lt;/font&gt;</code></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+<td><font style="color:rgb(15, 17, 21);">合并</font></td>
+<td><font style="color:rgb(15, 17, 21);">允许</font></td>
+<td><font style="color:rgb(15, 17, 21);">删除</font></td>
+</tr>
+<tr>
+<td><code>&lt;font style=&quot;color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);&quot;&gt;break-spaces&lt;/font&gt;</code></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留</font></strong></td>
+<td><font style="color:rgb(15, 17, 21);">允许</font></td>
+<td><strong><font style="color:rgb(15, 17, 21);">保留并允许换行</font></strong></td>
+</tr>
+</tbody></table>
+<p><font style="color:rgb(15, 17, 21);background-color:rgb(235, 238, 242);"></font></p>
+<h3 id="一些理解"><a href="#一些理解" class="headerlink" title="一些理解"></a>一些理解</h3><p>对于弹性布局的理解，并不是定位一直要设置position: relative;和position: absolute;一个相对定位，一个绝对定位。</p>
+<p>相对定位是基于整个页面的，绝对定位是基于上一层的，如果上一层是div，就是基于这个div的</p>
+<p>但今天我发现，还有弹性布局，display: flex；给内部的div加上flex: 1;就可以让放大缩小时特别整齐</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">heyvsheng</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/6f6e644d.html">http://example.com/posts/6f6e644d.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">heyvsheng的前端小库</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Css-%E5%89%8D%E7%AB%AF/">Css 前端</a></div><div class="post-share"><div class="social-share" data-image="/img/avatar_1.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width no-desc" href="/posts/ae57c2e7.html" title="算法刷题打卡"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">算法刷题打卡</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar_1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">heyvsheng</div><div class="author-info-description">记录代码记录学习笔记，记录一切想记录的事情。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/heyvsheng"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-star" style="color:#facc15"></i><span>公告</span></div><div class="announcement_content">欢迎来看我的分享小库</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">1.1.</span> <span class="toc-text">&lt;header&gt;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#z-index%E2%80%94%E2%80%94%E4%B8%8A%E4%B8%8B-%E4%BC%98%E5%85%88%E7%BA%A7-%E7%BA%A7"><span class="toc-number">1.2.</span> <span class="toc-text">z-index——上下(优先级)级</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#box-shadow%E2%80%94%E2%80%94%E9%98%B4%E5%BD%B1%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.</span> <span class="toc-text">box-shadow——阴影设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Eflex%E5%B8%83%E5%B1%80"><span class="toc-number">1.4.</span> <span class="toc-text">关于flex布局</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#transition%E2%80%94%E2%80%94%E8%BF%87%E6%B8%A1"><span class="toc-number">1.5.</span> <span class="toc-text">transition——过渡</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#outline%E2%80%94%E2%80%94%E8%BE%B9%E6%A1%86%E5%A4%96%E9%83%A8%EF%BC%8C%E7%AA%81%E5%87%BA%E6%98%BE%E7%A4%BA%E5%85%83%E7%B4%A0"><span class="toc-number">1.6.</span> <span class="toc-text">outline——边框外部，突出显示元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#padding%EF%BC%8Cborder%E5%92%8Cmargin"><span class="toc-number">1.7.</span> <span class="toc-text">padding，border和margin</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Border%EF%BC%88%E8%BE%B9%E6%A1%86%EF%BC%89"><span class="toc-number">1.7.1.</span> <span class="toc-text">Border（边框）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%92%E6%A8%A1%E5%9E%8B%E8%AE%A1%E7%AE%97"><span class="toc-number">1.7.2.</span> <span class="toc-text">盒模型计算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#overflow%E2%80%94%E5%85%83%E7%B4%A0%E5%86%85%E5%AE%B9%E8%B6%85%E5%87%BA%E5%8C%BA%E5%9F%9F%E8%AF%A5%E6%80%8E%E4%B9%88%E5%81%9A"><span class="toc-number">1.8.</span> <span class="toc-text">overflow—元素内容超出区域该怎么做</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A6%E5%8F%91BCF"><span class="toc-number">1.8.1.</span> <span class="toc-text">触发BCF</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#background-attachment-%E8%83%8C%E6%99%AF%E5%9B%BE%E5%83%8F%E6%BB%9A%E5%8A%A8"><span class="toc-number">1.9.</span> <span class="toc-text">background-attachment 背景图像滚动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E5%80%BC%E5%8F%8A%E6%95%88%E6%9E%9C"><span class="toc-number">1.9.1.</span> <span class="toc-text">属性值及效果</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#1-scroll%EF%BC%88%E9%BB%98%E8%AE%A4%E5%80%BC%EF%BC%89"><span class="toc-number">1.9.1.0.0.1.</span> <span class="toc-text">1. scroll（默认值）</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#2-fixed"><span class="toc-number">1.9.1.0.0.2.</span> <span class="toc-text">2. fixed</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#3-local"><span class="toc-number">1.9.1.0.0.3.</span> <span class="toc-text">3. local</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E5%BA%94%E7%94%A8%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.9.2.</span> <span class="toc-text">实际应用示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#transform%E2%80%942-3D%E5%8F%98%E5%8C%96"><span class="toc-number">1.10.</span> <span class="toc-text">transform—2&#x2F;3D变化</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="toc-number">1.10.0.0.1.</span> <span class="toc-text">基本语法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2D-%E5%8F%98%E6%8D%A2%E5%87%BD%E6%95%B0"><span class="toc-number">1.10.1.</span> <span class="toc-text">2D 变换函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3D-%E5%8F%98%E6%8D%A2%E5%87%BD%E6%95%B0"><span class="toc-number">1.10.2.</span> <span class="toc-text">3D 变换函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E9%87%8D%E5%8F%98%E6%8D%A2"><span class="toc-number">1.10.3.</span> <span class="toc-text">多重变换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%98%E6%8D%A2%E5%8E%9F%E7%82%B9%EF%BC%88transform-origin%EF%BC%89"><span class="toc-number">1.10.4.</span> <span class="toc-text">变换原点（transform-origin）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3D%E5%8F%98%E6%8D%A2%E7%9B%B8%E5%85%B3%E5%B1%9E%E6%80%A7"><span class="toc-number">1.10.5.</span> <span class="toc-text">3D变换相关属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#float%E2%80%94%E5%85%83%E7%B4%A0%E6%B5%AE%E5%8A%A8%EF%BC%8C%E5%AE%9A%E4%BD%8D"><span class="toc-number">1.11.</span> <span class="toc-text">float—元素浮动，定位</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%B1%E7%A6%BB%E6%96%87%E6%A1%A3%E6%B5%81"><span class="toc-number">1.11.1.</span> <span class="toc-text">脱离文档流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%AE%E5%8A%A8%E5%85%83%E7%B4%A0%E7%9A%84%E7%89%B9%E6%80%A7"><span class="toc-number">1.11.2.</span> <span class="toc-text">浮动元素的特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%EF%BC%88Clearfix%EF%BC%89"><span class="toc-number">1.12.</span> <span class="toc-text">清除浮动（Clearfix）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Float-%E7%9A%84%E5%B8%83%E5%B1%80%E6%8A%80%E5%B7%A7"><span class="toc-number">1.13.</span> <span class="toc-text">Float 的布局技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Float-%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7"><span class="toc-number">1.14.</span> <span class="toc-text">Float 的局限性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#border-radius%E2%80%94%E2%80%94%E8%AE%BE%E7%BD%AE%E5%85%83%E7%B4%A0%E5%9C%86%E8%A7%92"><span class="toc-number">1.15.</span> <span class="toc-text">border-radius——设置元素圆角</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95-1"><span class="toc-number">1.15.1.</span> <span class="toc-text">基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E8%AF%AD%E6%B3%95%EF%BC%9A%E6%A4%AD%E5%9C%86%E5%9C%86%E8%A7%92"><span class="toc-number">1.15.2.</span> <span class="toc-text"> 高级语法：椭圆圆角</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E7%8B%AC%E6%8E%A7%E5%88%B6%E6%AF%8F%E4%B8%AA%E8%A7%92"><span class="toc-number">1.15.3.</span> <span class="toc-text">单独控制每个角</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#resize%E2%80%94%E2%80%94%E5%85%81%E8%AE%B8%E7%94%A8%E6%88%B7%E8%B0%83%E6%95%B4%E5%85%83%E7%B4%A0%E5%A4%A7%E5%B0%8F"><span class="toc-number">1.16.</span> <span class="toc-text">resize——允许用户调整元素大小</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/6f6e644d.html" title="Css复习">Css复习</a><time datetime="2025-10-13T05:10:13.000Z" title="发表于 2025-10-13 13:10:13">2025-10-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ae57c2e7.html" title="算法刷题打卡">算法刷题打卡</a><time datetime="2025-10-11T12:02:55.000Z" title="发表于 2025-10-11 20:02:55">2025-10-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/73626faf.html" title="魔改教程">魔改教程</a><time datetime="2025-10-11T08:29:21.000Z" title="发表于 2025-10-11 16:29:21">2025-10-11</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/4a17b156.html" title="目前的计划">目前的计划</a><time datetime="2025-10-08T16:36:47.730Z" title="发表于 2025-10-09 00:36:47">2025-10-09</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By heyvsheng</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><script src="/js/tw_cn.js?v=5.5.1"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><div class="aplayer no-darkmode" data-id="1708664797" data-server="tencent" data-typr="playlist" data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true"></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script defer src="/js/cursor.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="30" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/metingjs/dist/Meting.min.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
 if (navigator.serviceWorker.controller) {
 navigator.serviceWorker.addEventListener('controllerchange', function() {
 showNotification()
